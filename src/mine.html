@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>设置</title>
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mine.css">
+</head>
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-current" id='routers-index'>
+        <!--头部-->
+        <header class="bar bar-nav">
+            <!--头部有logo部分-->
+            <div class="sprite sprite-logo"></div>
+        </header>
+        <!--内容区-->
+        <div class="content">
+            <div class="tabs">
+                <div id="config" class="tab active">
+                    <div class="content-block">
+                        <div class="list-block">
+                            <div class="list">
+                                <a class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title ">用户名：</div>
+                                        <div class="item-after">
+                                            <input type="text" value="ksksssdfhjkl">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="item-content item-link tab-link open-popup" href="#editProfile" data-popup=".popup-editProfile">
+                                    <div class="item-inner">
+                                        <div class="item-title">修改资料</div>
+                                    </div>
+                                </a>
+                                <a class="item-content item-link tab-link open-popup" href="#editUser" data-popup=".popup-editUser">
+                                    <div class="item-inner">
+                                        <div class="item-title">修改密码</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p><a href="#" class="button button-light">退出当前账号</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--尾部工具栏-->
+        <nav class="bar bar-tab normal-tab">
+            <a class="tab-item external" href="index.html">
+                <span class="icon iconfont">&#xe63c;</span>
+                <span class="tab-label">文件</span>
+            </a>
+            <a class="tab-item external" href="share.html">
+                <span class="icon iconfont">&#xe63a;</span>
+                <span class="tab-label">分享</span>
+            </a>
+            <a class="tab-item external" href="together.html">
+                <span class="icon iconfont">&#xe638;</span>
+                <span class="tab-label">共享</span>
+            </a>
+            <!--<a class="tab-item external" href="uplist.html">-->
+                <!--<span class="icon iconfont">&#xe654;</span>-->
+                <!--<span class="tab-label">上传列表</span>-->
+            <!--</a>-->
+            <a class="tab-item external active" href="mine.html">
+                <span class="icon iconfont">&#xe63b;</span>
+                <span class="tab-label">设置</span>
+            </a>
+        </nav>
+        <div class="popup popup-editProfile">
+            <div class="content-block">
+                <header class="bar bar-nav">
+                    <a class="icon icon-left pull-left close-popup" data-popup=".popup-editProfile"></a>
+                    <h1 class="title">修改资料</h1>
+                </header>
+                <div id="editProfile" class="content">
+                    <div class="content-block">
+                        <form action="">
+                            <ul>
+                                <li>
+                                    <i class="iconfont">&#xe65a;</i>
+                                    <input id="username" type="text" placeholder="输入账号">
+                                </li>
+                                <li>
+                                    <i class="iconfont">&#xe66a;</i>
+                                    <input id="tel" type="tel" placeholder="输入电话">
+                                </li>
+                                <li>
+                                    <i class="iconfont">&#xe669;</i>
+                                    <input id="email" type="email" placeholder="输入Email">
+                                </li>
+                            </ul>
+                            <div class="sub"><input type="submit" aria-autocomplete="确定"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup popup-editUser">
+            <div class="content-block">
+                <header class="bar bar-nav">
+                    <a class="icon icon-left pull-left close-popup" data-popup=".popup-editUser"></a>
+                    <h1 class="title">修改密码</h1>
+                </header>
+                <div id="editUser" class="content">
+                    <div class="content-block">
+                        <form action="">
+                            <ul>
+                                <li>
+                                    <input type="password" placeholder="输入原密码">
+                                </li>
+                                <li>
+                                    <input id="nowPwd" type="password" placeholder="输入新密码">
+                                </li>
+                                <li>
+                                    <input id="nowRePwd" type="password" placeholder="输入新密码">
+                                </li>
+                            </ul>
+                            <div class="sub"><input type="submit" aria-autocomplete="确定"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!--[if lt IE 9]>
+<script src="lib/html5shiv.min.js"></script>
+<script src="lib/respond.min.js"></script>
+<![endif]-->
+<script src="js/common.js"></script>
+<script src="js/mine.js"></script>
+</html>

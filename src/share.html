@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>分享</title>
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/share.css">
+</head>
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-current" id='routers-index'>
+        <!--头部-->
+        <header class="bar bar-nav">
+            <!--头部有logo部分-->
+            <div class="sprite sprite-logo"></div>
+            <a class="button button-link button-nav pull-right" href="#" data-transition='slide-out'>
+                <i class="iconfont open-popup" data-popup=".popup-share-menu">&#xe650;</i>
+            </a>
+            <!--有搜索框的一栏-->
+            <div class="row no-gutter opera">
+                <!--添加按钮-->
+                <!--<div class="col-15">-->
+                    <!--<i class="iconfont open-popup" data-popup=".popup-add">&#xe639;</i>-->
+                <!--</div>-->
+                <!--排序按钮-->
+                <div class="col-20">
+                    <i class="iconfont open-popup" data-popup=".popup-rank">&#xe63f;</i>
+                </div>
+                <!--搜索按钮-->
+                <div class="col-80">
+                    <div class="searchbar" >
+                        <div class="search-input open-popup" data-popup=".popup-search">
+                            <label class="icon icon-search" for="search" ></label>
+                            <input type="search" id='search'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--我的分享菜单蒙版-->
+        <div class="popup popup-share-menu">
+            <div class="content-block">
+                <div class="content-padded grid-demo">
+                    <ul>
+                        <li class="active my-share">我的分享</li>
+                        <li class="share-me">分享给我</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--排序蒙版-->
+        <div class="popup popup-rank">
+            <div class="content-block">
+                <div class="content-padded grid-demo">
+                    <ul>
+                        <li class="active">按时间排序</li>
+                        <li>按字母排序</li>
+                        <li>按类型排序</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--搜索蒙版-->
+        <div class="popup popup-search">
+            <div class="content-block">
+                <div class="content-padded grid-demo">
+                    <div class="bar bar-header-secondary">
+                        <div class="searchbar">
+                            <a class="searchbar-cancel close-popup" data-popup=".popup-search">取消</a>
+                            <div class="search-input">
+                                <label class="icon icon-search" for="searchPopup"></label>
+                                <input type="search" id='searchPopup'/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--内容区-->
+        <div class="content infinite-scroll infinite-scroll-bottom" data-distance="100">
+            <!--下拉菜单-->
+            <!--主页面内容-->
+            <div id="myShare" class="page-index">
+                <div class="card head-card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row no-gutter">
+                                <div class="col-100">我的分享</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dr">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="row no-gutter">
+                                    <div class="col-12">
+                                        <i class="iconfont edit">&#xe672;</i>
+                                    </div>
+                                    <div class="col-15">
+                                        <div class="sprite sprite-dr"></div>
+                                    </div>
+                                    <div class="col-73">
+                                        <p class="original-name">尤克里里之谈几点尤克里里之谈几点尤克里里之谈几点</p>
+                                        <p>
+                                            <span class="date-rank">2016-11-08&nbsp;05:55</span>
+                                            <span class="right">分享给小明</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="row no-gutter">
+                                    <div class="col-12">
+                                        <i class="iconfont edit">&#xe672;</i>
+                                    </div>
+                                    <div class="col-15">
+                                        <div class="sprite sprite-dr"></div>
+                                    </div>
+                                    <div class="col-73">
+                                        <p class="original-name">2尤克里里之谈几点</p>
+                                        <p>
+                                            <span class="date-rank">2016-11-08&nbsp;05:55</span>
+                                            <span class="right">分享给小明</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="row no-gutter">
+                                    <div class="col-12">
+                                        <i class="iconfont edit">&#xe672;</i>
+                                    </div>
+                                    <div class="col-15">
+                                        <div class="sprite sprite-dr"></div>
+                                    </div>
+                                    <div class="col-73">
+                                        <p class="original-name">3尤克里里之谈几点</p>
+                                        <p>
+                                            <span class="date-rank">2016-11-08&nbsp;05:55</span>
+                                            <span class="right">分享给小明</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="file">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="row no-gutter">
+                                    <label class="col-12" for="file8">
+                                        <div class="cloudfog-radio">
+                                            <input id="file8" class="radio-btn" type="radio" name="myShare">
+                                            <i class="green-dot"></i>
+                                        </div>
+                                    </label>
+                                    <div class="col-15">
+                                        <div class="sprite sprite-jpg"></div>
+                                    </div>
+                                    <div class="col-73">
+                                        <p class="original-name">尤克里里之谈几点</p>
+                                        <p>
+                                            <span class="date-rank">2016-11-08&nbsp;05:55</span>
+                                            <span class="right">分享给小明</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="row no-gutter">
+                                    <label class="col-12" for="file9">
+                                        <div class="cloudfog-radio">
+                                            <input id="file9" class="radio-btn" type="radio" name="myShare">
+                                            <i class="green-dot"></i>
+                                        </div>
+                                    </label>
+                                    <div class="col-15">
+                                        <div class="sprite sprite-jpg"></div>
+                                    </div>
+                                    <div class="col-73">
+                                        <p class="original-name">尤克里里之谈几点</p>
+                                        <p>
+                                            <span class="date-rank">2016-11-08&nbsp;05:55</span>
+                                            <span class="right">分享给小明</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="row no-gutter">
+                                    <label class="col-12" for="file10">
+                                        <div class="cloudfog-radio">
+                                            <input id="file10" class="radio-btn" type="radio" name="myShare">
+                                            <i class="green-dot"></i>
+                                        </div>
+                                    </label>
+                                    <div class="col-15">
+                                        <div class="sprite sprite-jpg"></div>
+                                    </div>
+                                    <div class="col-73">
+                                        <p class="original-name">尤克里里之谈几点</p>
+                                        <p>
+                                            <span class="date-rank">2016-11-08&nbsp;05:55</span>
+                                            <span class="right">分享给小明</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="row no-gutter">
+                                    <label class="col-12" for="file11">
+                                        <div class="cloudfog-radio">
+                                            <input id="file11" class="radio-btn" type="radio" name="myShare">
+                                            <i class="green-dot"></i>
+                                        </div>
+                                    </label>
+                                    <div class="col-15">
+                                        <div class="sprite sprite-jpg"></div>
+                                    </div>
+                                    <div class="col-73">
+                                        <p class="original-name">尤克里里之谈几点</p>
+                                        <p>
+                                            <span class="date-rank">2016-11-08&nbsp;05:55</span>
+                                            <span class="right">分享给小明</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 加载提示符 -->
+                <div class="infinite-scroll-preloader">
+                    <div class="preloader"></div>
+                </div>
+            </div>
+            <div id="shareMe" class="page-index hide">
+                <div class="card head-card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row no-gutter">
+                                <div class="col-100">分享给我</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dr">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="row no-gutter">
+                                    <div class="col-12">
+                                        <i class="iconfont edit">&#xe672;</i>
+                                    </div>
+                                    <div class="col-15">
+                                        <div class="sprite sprite-dr"></div>
+                                    </div>
+                                    <div class="col-73">
+                                        <p class="original-name">1尤克里里之谈几点</p>
+                                        <p>
+                                            <span class="date-rank">2016-11-08&nbsp;05:55</span>
+                                            <span class="right">分享给小明</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="row no-gutter">
+                                    <div class="col-12">
+                                        <i class="iconfont edit">&#xe672;</i>
+                                    </div>
+                                    <div class="col-15">
+                                        <div class="sprite sprite-dr"></div>
+                                    </div>
+                                    <div class="col-73">
+                                        <p class="original-name">1尤克里里之谈几点</p>
+                                        <p>
+                                            <span class="date-rank">2016-11-08&nbsp;05:55</span>
+                                            <span class="right">分享给小明</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="row no-gutter">
+                                    <div class="col-12">
+                                        <i class="iconfont edit">&#xe672;</i>
+                                    </div>
+                                    <div class="col-15">
+                                        <div class="sprite sprite-dr"></div>
+                                    </div>
+                                    <div class="col-73">
+                                        <p class="original-name">1尤克里里之谈几点</p>
+                                        <p>
+                                            <span class="date-rank">2016-11-08&nbsp;05:55</span>
+                                            <span class="right">分享给小明</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="file">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="row no-gutter">
+                                    <label class="col-12" for="file8">
+                                        <div class="cloudfog-radio">
+                                            <input id="file8" class="radio-btn" type="radio" name="myShare">
+                                            <i class="green-dot"></i>
+                                        </div>
+                                    </label>
+                                    <div class="col-15">
+                                        <div class="sprite sprite-jpg"></div>
+                                    </div>
+                                    <div class="col-73">
+                                        <p class="original-name">尤克里里之谈几点</p>
+                                        <p>
+                                            <span class="date-rank">2016-11-08&nbsp;05:55</span>
+                                            <span class="right">分享给小明</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="row no-gutter">
+                                    <label class="col-12" for="file9">
+                                        <div class="cloudfog-radio">
+                                            <input id="file9" class="radio-btn" type="radio" name="myShare">
+                                            <i class="green-dot"></i>
+                                        </div>
+                                    </label>
+                                    <div class="col-15">
+                                        <div class="sprite sprite-jpg"></div>
+                                    </div>
+                                    <div class="col-73">
+                                        <p class="original-name">尤克里里之谈几点</p>
+                                        <p>
+                                            <span class="date-rank">2016-11-08&nbsp;05:55</span>
+                                            <span class="right">分享给小明</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="row no-gutter">
+                                    <label class="col-12" for="file10">
+                                        <div class="cloudfog-radio">
+                                            <input id="file10" class="radio-btn" type="radio" name="myShare">
+                                            <i class="green-dot"></i>
+                                        </div>
+                                    </label>
+                                    <div class="col-15">
+                                        <div class="sprite sprite-jpg"></div>
+                                    </div>
+                                    <div class="col-73">
+                                        <p class="original-name">尤克里里之谈几点</p>
+                                        <p>
+                                            <span class="date-rank">2016-11-08&nbsp;05:55</span>
+                                            <span class="right">分享给小明</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="row no-gutter">
+                                    <label class="col-12" for="file11">
+                                        <div class="cloudfog-radio">
+                                            <input id="file11" class="radio-btn" type="radio" name="myShare">
+                                            <i class="green-dot"></i>
+                                        </div>
+                                    </label>
+                                    <div class="col-15">
+                                        <div class="sprite sprite-jpg"></div>
+                                    </div>
+                                    <div class="col-73">
+                                        <p class="original-name">尤克里里之谈几点</p>
+                                        <p>
+                                            <span class="date-rank">2016-11-08&nbsp;05:55</span>
+                                            <span class="right">分享给小明</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 加载提示符 -->
+                <div class="infinite-scroll-preloader">
+                    <div class="preloader"></div>
+                </div>
+            </div>
+        </div>
+        <!--尾部工具栏-->
+        <nav class="bar bar-tab normal-tab">
+            <a class="tab-item external" href="index.html">
+                <span class="icon iconfont">&#xe63c;</span>
+                <span class="tab-label">文件</span>
+            </a>
+            <a class="tab-item active external" href="share.html">
+                <span class="icon iconfont">&#xe63a;</span>
+                <span class="tab-label">分享</span>
+            </a>
+            <a class="tab-item external" href="together.html">
+                <span class="icon iconfont">&#xe638;</span>
+                <span class="tab-label">共享</span>
+            </a>
+            <!--<a class="tab-item external" href="uplist.html">-->
+                <!--<span class="icon iconfont">&#xe654;</span>-->
+                <!--<span class="tab-label">上传列表</span>-->
+            <!--</a>-->
+            <a class="tab-item external" href="mine.html">
+                <span class="icon iconfont">&#xe63b;</span>
+                <span class="tab-label">设置</span>
+            </a>
+        </nav>
+        <!--详细信息-->
+        <div class="popup popup-detail">
+            <div class="content-block">
+                <div class="content-padded grid-demo">
+                    <header class="bar bar-nav">
+                        <button class="button button-link button-nav pull-left close-popup" data-popup=".popup-detail">
+                            <span class="icon icon-left"></span>
+                        </button>
+                        <h1 class="title">详细信息</h1>
+                    </header>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-30">文件名:</div>
+                            <div class="col-70">尤克里里之谈几点</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-30">大小:</div>
+                            <div class="col-70">344.25KB</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-30">类型:</div>
+                            <div class="col-70">acc</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-30">修改时间:</div>
+                            <div class="col-70"><span>2017-04-10</span><span>16:43</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!--[if lt IE 9]>
+<script src="lib/html5shiv.min.js"></script>
+<script src="lib/respond.min.js"></script>
+<![endif]-->
+<script src="js/common.js"></script>
+<script src="js/share.js"></script>
+
+</html>

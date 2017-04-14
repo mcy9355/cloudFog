@@ -1,0 +1,160 @@
+@import "variables";
+//头部设置高度
+header.bar-nav {
+  .button {
+    width: 7rem;
+  }
+}
+
+.content {
+  bottom: 2.5rem;
+  background-color: @text-white;
+  .buttons-tab {
+    .button.active {
+      color: @text-orange;
+      border-color: @text-orange;
+    }
+  }
+  .content-block {
+    margin: 0;
+    padding: 0;
+    .list-block {
+      margin-top: 0.5rem;
+    }
+    .tabs {
+      #UplodQueue, #downloadQueue {
+        .list-block {
+          margin: 0;
+          .card {
+            margin: 0;
+            border-bottom: 1px solid @border-gray;
+            box-shadow: none;
+            .card-content {
+              .card-content-inner {
+                padding: 0;
+                .row {
+                  height: 3.25rem;
+                  .col-11 {
+                    height: 3.25rem;
+                    width: 11%;
+                    padding-left: 0.8rem;
+                    padding-top: 1rem;
+                    i.iconfont{
+                      font-size: 0.8rem;
+                    }
+                  }
+                  .col-12 {
+                    height: 3.25rem;
+                    width: 12%;
+                    padding-top: 0.8rem;
+                    .sprite {
+                      background-size: 21rem auto;  //背景图片的宽度缩减到一半，高度自适应
+                    }
+                    .sprite-dr { //图片大小缩小到一半
+                      width: 2.2rem;
+                      height: 2.2rem;
+                      background-position: 0 -59rem;   //背景图片的位置也相应的缩减到一半
+                    }
+                  }
+                  .col-77 {
+                    height: 3.25rem;
+                    width: 77%;
+                    p {
+                      margin: 0;
+                    }
+                    p:nth-child(1) {
+                      font-size: 0.65rem;
+                      line-height: 1.2rem;
+                      padding-top: 0.2rem;
+                    }
+                    .p-progress {
+                      height: 0.7rem;
+                      font-size: 0.6rem;
+                      padding-right: 0.75rem;
+                      position: relative;
+                      progress {
+                        width: 60%;
+                        height: 0.35rem;
+                        -webkit-appearance: none;
+                      }
+                      span.note-progress{
+                        position: absolute;
+                        left: 22%;
+                        top:4px;
+                        z-index: 10;
+                        font-size: 8px;
+                        color: @text-white;
+                      }
+                      ::-webkit-progress-inner-element {
+                        background: @progress-blank;
+                      }
+                      ::-webkit-progress-bar {
+                        background: @progress-blank;
+                      }
+                      ::-webkit-progress-value {
+                        background: @text-a;
+                      }
+                      ::-moz-progress-bar {
+                        background: @progress-blank;
+                      }
+                      ::-ms-fill {
+                        background: @progress-blank;
+                      }
+                    }
+                    .data-info {
+                      height: 1rem;
+                      padding-top: 0.25rem;
+                      font-size: 0.5rem;
+                      span {
+                        display: inline-block;
+                        width: 60%;
+                        color: @text-info;
+                        em {
+                          font-style: normal;
+
+                        }
+                      }
+                    }
+                  }
+                  .col-23{
+                    width: 23%;
+                    height: 100%;
+                  }
+                }
+              }
+              .add-card{
+                .row{
+                  .col-77{
+                    border-top: 1px solid @border-gray;
+                    .p-progress {
+                      ::-webkit-progress-inner-element {
+                        background: @progress-blank;
+                      }
+                      ::-webkit-progress-bar {
+                        background: @progress-blank;
+                      }
+                      ::-webkit-progress-value {
+                        background: @text-orange;
+                      }
+                      ::-moz-progress-bar {
+                        background: @progress-blank;
+                      }
+                      ::-ms-fill {
+                        background: @progress-blank;
+                      }
+                    }
+                    span{
+                      text-align: right;
+                    }
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

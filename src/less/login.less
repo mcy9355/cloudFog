@@ -1,0 +1,124 @@
+@import "variables";
+@import "index";
+.page-current{
+  background-color: @bg-blue2;
+  header.bar-nav{
+    height: 2.25rem;
+    position: static;
+  }
+  .content{
+    width: 100%;
+    background-color: @bg-blue2;
+    top:2.25rem !important;
+    border: none;
+    .content-block{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      position: relative;
+      form{
+        padding: 1.25rem 0.5rem 0 0.5rem;
+        //用户名和密码框
+        section.user,section.pwd{
+          display: block;
+          width: 100%;
+          height: 2.5rem;
+          position: relative;
+          .user-icon,.pwd-icon{
+            position: absolute;
+            left: 0.5rem;
+            top:0.3rem;
+          }
+          .view-icon1,.view-icon2{
+            position: absolute;
+            top:0.3rem;
+            right: 0.5rem;
+          }
+          input{
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding: 0;
+            margin: 0;
+            border-bottom: 1px solid @border-input2;
+            text-indent: 2rem;
+            font-size: 0.75rem;
+            color: @text-black;
+          }
+          input.user-name{
+            border-radius:4px 4px 0 0;
+          }
+          input.password{
+            border-radius: 0 0 4px 4px;
+          }
+        }
+        section.key{
+          margin-top: 0.5rem;
+          .row{
+            height: 2.25rem;
+            .col-50{
+              height: 100%;
+              input{
+                width: 100%;
+                height: 100%;
+                border-radius: 4px;
+                color: @text-black;
+                text-indent: 0.5rem;
+                font-size: 0.75rem;
+              }
+              input::-webkit-input-placeholder{
+                font-weight: normal;
+                color: @text-gray;
+              }
+              input::-moz-placeholder{
+                font-weight: normal;
+                color: @text-gray;
+              }
+              input:-ms-input-placeholder{
+                font-weight: normal;
+                color: @text-gray;
+              }
+            }
+          }
+          .demand{
+            margin: 1.5rem 0 0 0;
+            text-align: center;
+            font-size: 0.75rem;
+            color: @text-white;
+            strong{
+              color: @text-orange;
+              font-size: 1rem;
+              font-weight: bolder;
+            }
+          }
+        }
+        button[type=submit]{
+          padding: 0;
+          margin: 1.5rem 0 0 0;
+          border: none;
+          width: 100%;
+          height: 2.25rem;
+          background-color: @text-orange;
+          border-radius: 4px;
+          color: @text-white;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  nav.bar-tab{
+    background-color: @bg-blue2;
+    text-align: center;
+    margin-top: -1px;
+    position: static;
+    footer{
+      width: 100%;
+      line-height: 2rem;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.6rem;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>权限管理</title>
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/authority-manage.css">
+</head>
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-current" id='routers-index'>
+        <!--头部-->
+        <header class="bar bar-nav">
+            <!--头部有logo部分-->
+            <div class="sprite sprite-logo"></div>
+            <a class="button button-link button-nav pull-right" href="#" data-transition='slide-out'>
+                Administrator
+                <span class="icon icon-down open-popup" data-popup=".popup-classify"></span>
+                <span class="icon icon-up close-popup hide"></span>
+            </a>
+        </header>
+        <!--内容区-->
+        <div class="content">
+            <div class="buttons-tab">
+                <a href="#user" class="tab-link active button">用户</a>
+                <a href="#userGroup" class="tab-link button">用户组</a>
+                <a href="#framework" class="tab-link button">组织架构</a>
+            </div>
+            <div class="content-block">
+                <div class="tabs">
+                    <div id="user" class="tab active">
+                        <div class="content-block">
+                            <div class="card head-card">
+                                <div class="card-content">
+                                    <div class="card-content-inner">
+                                        <div class="row no-gutter role">
+                                            <div class="col-17">
+                                                <span>角色</span>
+                                            </div>
+                                            <div class="col-83">
+                                                <select name="" id="">
+                                                    <option value="">全部</option>
+                                                    <option value="">超级管理员</option>
+                                                    <option value="">普通用户</option>
+                                                </select>
+                                            </div>
+                                            <i class="iconfont down">&#xe63e;</i>
+                                        </div>
+                                        <div class="row no-gutter">
+                                            <div class="col-17 add-user">
+                                                <i class="iconfont">&#xe639;</i>
+                                            </div>
+                                            <div class="col-83">
+                                                <div class="searchbar">
+                                                    <div class="search-input">
+                                                        <label class="icon icon-search" for="UserSearch"></label>
+                                                        <input type="search" id='UserSearch' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-block">
+                                <ul>
+                                    <li class="item-content">
+                                        <label for="allUser">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="allUser">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">
+                                                用户列表(<span class="all-role">9</span>)
+                                            </div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-link" >
+                                        <label for="user1">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="user1">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner open-popup" data-popup=".popup-edit-user">
+                                            <div class="item-title">HATTY</div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-link" >
+                                        <label for="user1">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="user2">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner open-popup" data-popup=".popup-edit-user">
+                                            <div class="item-title">HATTY</div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-link" >
+                                        <label for="user1">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="user3">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner open-popup" data-popup=".popup-edit-user">
+                                            <div class="item-title">HATTY</div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-link" >
+                                        <label for="user1">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="user4">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner open-popup" data-popup=".popup-edit-user">
+                                            <div class="item-title">HATTY</div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-link" >
+                                        <label for="user1">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="user5">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner open-popup" data-popup=".popup-edit-user">
+                                            <div class="item-title">HATTY</div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-link" >
+                                        <label for="user1">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="user6">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner open-popup" data-popup=".popup-edit-user">
+                                            <div class="item-title">HATTY</div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-link" >
+                                        <label for="user1">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="user7">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner open-popup" data-popup=".popup-edit-user">
+                                            <div class="item-title">HATTY</div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-link" >
+                                        <label for="user1">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="user8">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner open-popup" data-popup=".popup-edit-user">
+                                            <div class="item-title">HATTY</div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-link" >
+                                        <label for="user1">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="user9">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner open-popup" data-popup=".popup-edit-user">
+                                            <div class="item-title">HATTY</div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="userGroup" class="tab">
+                        <div class="content-block">
+                            <div class="card head-card">
+                                <div class="card-content">
+                                    <div class="card-content-inner">
+                                        <div class="row no-gutter">
+                                            <div class="col-17 open-popup" data-popup=".popup-rename">
+                                                <i class="iconfont">&#xe639;</i>
+                                            </div>
+                                            <div class="col-83">
+                                                <div class="searchbar">
+                                                    <div class="search-input">
+                                                        <label class="icon icon-search" for="userGroupSearch"></label>
+                                                        <input type="search" id='userGroupSearch' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-block">
+                                <div class="item-content">
+                                    <label for="allUserGroup">
+                                        <div class="cloudfog-checkbox">
+                                            <input type="checkbox" id="allUserGroup">
+                                            <i class="iconfont">&#xe64f;</i>
+                                        </div>
+                                    </label>
+                                    <div class="item-media">
+                                        <i class="icon icon-f7"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title">
+                                            角色列表(<span class="all-role">8</span>)
+                                        </div>
+                                        <div class="item-after"></div>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li class="item-content item-link">
+                                        <label for="user1">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="user1">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner open-popup" data-popup=".popup-edit-role">
+                                            <div class="item-title">哈哈哈</div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-link">
+                                        <label for="user1">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="user1">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner open-popup" data-popup=".popup-edit-role">
+                                            <div class="item-title">HATTY</div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-link">
+                                        <label for="user1">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="user1">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner open-popup" data-popup=".popup-edit-role">
+                                            <div class="item-title">HATTY</div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-link">
+                                        <label for="user1">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="user1">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner open-popup" data-popup=".popup-edit-role">
+                                            <div class="item-title">HATTY</div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-link">
+                                        <label for="user1">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="user1">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner open-popup" data-popup=".popup-edit-role">
+                                            <div class="item-title">HATTY</div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-link">
+                                        <label for="user1">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="user1">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner open-popup" data-popup=".popup-edit-role">
+                                            <div class="item-title">HATTY</div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-link">
+                                        <label for="user1">
+                                            <div class="cloudfog-checkbox">
+                                                <input type="checkbox" id="user1">
+                                                <i class="iconfont">&#xe64f;</i>
+                                            </div>
+                                        </label>
+                                        <div class="item-media">
+                                            <i class="icon icon-f7"></i>
+                                        </div>
+                                        <div class="item-inner open-popup" data-popup=".popup-edit-role">
+                                            <div class="item-title">HATTY</div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="framework" class="tab">
+                        <div class="content-block">
+                            <div class="list-block">
+                                <ul>
+                                    <li>
+                                    <i class="iconfont">&#xe62d;</i>子墨公司
+                                </li>
+                                    <ul class="hide">
+                                        <li><i class="iconfont">&#xe62d;</i>市场营销部</li>
+                                        <li> <i class="iconfont">&#xe62d;</i>技术支持部</li>
+                                        <li> <i class="iconfont">&#xe62d;</i>财务部</li>
+                                        <li> <i class="iconfont">&#xe62d;</i>人力资源部</li>
+                                        <ul class="hide">
+                                            <li> <i class="iconfont">&#xe62d;</i>1组</li>
+                                            <li> <i class="iconfont">&#xe62d;</i>2组</li>
+                                            <ul class="hide">
+                                                <li> <i class="iconfont">&#xe62d;</i>张三</li>
+                                                <li> <i class="iconfont">&#xe62d;</i>里斯</li>
+                                            </ul>
+                                            <li> <i class="iconfont">&#xe62d;</i>3组</li>
+                                        </ul>
+                                    </ul>
+
+                                    <li>
+                                        <i class="iconfont">&#xe62d;</i>子墨公司
+                                    </li>
+                                    <ul class="hide">
+                                        <li><i class="iconfont">&#xe62d;</i>市场营销部</li>
+                                        <li> <i class="iconfont">&#xe62d;</i>技术支持部</li>
+                                        <li> <i class="iconfont">&#xe62d;</i>财务部</li>
+                                        <li> <i class="iconfont">&#xe62d;</i>人力资源部</li>
+                                        <ul class="hide">
+                                            <li> <i class="iconfont">&#xe62d;</i>1组</li>
+                                            <li> <i class="iconfont">&#xe62d;</i>2组</li>
+                                            <ul class="hide">
+                                                <li> <i class="iconfont">&#xe62d;</i>张三</li>
+                                                <li> <i class="iconfont">&#xe62d;</i>里斯</li>
+                                            </ul>
+                                            <li> <i class="iconfont">&#xe62d;</i>3组</li>
+                                        </ul>
+                                    </ul>
+
+                                    <li>
+                                        <i class="iconfont">&#xe62d;</i>子墨公司
+                                    </li>
+                                    <ul class="hide">
+                                        <li><i class="iconfont">&#xe62d;</i>市场营销部</li>
+                                        <li> <i class="iconfont">&#xe62d;</i>技术支持部</li>
+                                        <li> <i class="iconfont">&#xe62d;</i>财务部</li>
+                                        <li> <i class="iconfont">&#xe62d;</i>人力资源部</li>
+                                        <ul class="hide">
+                                            <li> <i class="iconfont">&#xe62d;</i>1组</li>
+                                            <li> <i class="iconfont">&#xe62d;</i>2组</li>
+                                            <ul class="hide">
+                                                <li> <i class="iconfont">&#xe62d;</i>张三</li>
+                                                <li> <i class="iconfont">&#xe62d;</i>里斯</li>
+                                            </ul>
+                                            <li> <i class="iconfont">&#xe62d;</i>3组</li>
+                                        </ul>
+                                    </ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--尾部工具栏-->
+        <nav class="bar bar-tab">
+            <a class="tab-item external" href="cloud-config.html">
+                <span class="icon iconfont">&#xe656;</span>
+                <span class="tab-label">云配置</span>
+            </a>
+            <a class="tab-item external active" href="authority-manage.html">
+                <span class="icon iconfont">&#xe655;</span>
+                <span class="tab-label">权限管理</span>
+            </a>
+            <a class="tab-item external" href="opera-log.html">
+                <span class="icon iconfont">&#xe657;</span>
+                <span class="tab-label">操作日志</span>
+            </a>
+            <a class="tab-item external" href="opera-queue.html">
+                <span class="icon iconfont">&#xe654;</span>
+                <span class="tab-label">操作队列</span>
+            </a>
+            <a class="tab-item external" href="system-config.html">
+                <span class="icon iconfont">&#xe658;</span>
+                <span class="tab-label">系统配置</span>
+            </a>
+        </nav>
+        <!--选中尾部工具栏-->
+        <nav class="bar bar-tab checked-tab hide">
+            <p class="cancel">
+                <button type="reset" class="left close-checked-tab">取消</button>
+                <span>已选定<em class="check-num">1</em>个</span>
+                <button class="right">删除</button>
+            </p>
+        </nav>
+        <!--添加用户蒙版-->
+        <div class="popup popup-add-user">
+            <!--头部-->
+            <header class="bar bar-nav">
+                <h1 class="title">添加用户</h1>
+                <button class="button button-link button-nav pull-left close-popup" data-popup=".popup-add-user">
+                    <span class="icon icon-left"></span>
+                </button>
+            </header>
+            <div class="content-block">
+                <div class="content content-user">
+                    <!--主页面内容-->
+                    <form action="">
+                        <div class="list-block">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title label">用&nbsp;&ensp;户&nbsp;名：</div>
+                                            <div class="item-input">
+                                                <input type="text" value="hattyxiaoniao">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title label">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</div>
+                                            <div class="item-input">
+                                                <input type="password" value="000000">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title label">所属部门：</div>
+                                            <div class="item-input">
+                                                <select>
+                                                    <option>研发部</option>
+                                                    <option>Female</option>
+                                                </select>
+                                            </div>
+                                            <i class="iconfont down">&#xe63e;</i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title label">角&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;色：</div>
+                                            <div class="item-input">
+                                                <select>
+                                                    <option>超级管理员</option>
+                                                    <option>Female</option>
+                                                    <option>Female</option>
+                                                    <option>Female</option>
+                                                    <option>Female</option>
+                                                </select>
+                                            </div>
+                                            <i class="iconfont down">&#xe63e;</i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title label">职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位：</div>
+                                            <div class="item-input">
+                                                <input type="text" value="前端工程师">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title label">手&nbsp;&ensp;机&nbsp;号：</div>
+                                            <div class="item-input">
+                                                <input type="number" value="18301905314">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title label">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</div>
+                                            <div class="item-input">
+                                                <input type="email" value="1805657226@qq.com">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title label">序&nbsp;&ensp;列&nbsp;号：</div>
+                                            <div class="item-input">
+                                                <input type="number" placeholder="请输入令牌序列号">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="serial-number-li">
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <p>
+                                                请输入KEY上的令牌序列号
+                                                <i class="iconfont">&#xe62d;</i>
+                                            </p>
+                                            <img src="./images/z.png" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content-block ">
+                            <div class="row">
+                                <div>
+                                    <a href="#" class="button">保存</a>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="bar bar-tab delete-tab simple-tab hide">
+                            <p class="cancel">
+                                <button type="reset" class="left close-checked-tab">取消</button>
+                                <span>已选定<em>2</em>个</span>
+                                <a href="##">
+                                    <button class="right delete">删除</button>
+                                </a>
+                            </p>
+                        </nav>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--批量导入用户蒙版-->
+        <div class="popup popup-add-user-group">
+            <!--头部-->
+            <header class="bar bar-nav">
+                <button class="button button-link button-nav pull-left close-popup" data-popup=".popup-add-user-group">
+                    <span class="icon icon-left"></span>
+                </button>
+                <h1 class="title">批量导入用户</h1>
+            </header>
+            <div class="content">
+                <div class="bg-white">
+                    <h2>选择CSV文件</h2>
+                    <div class="scan">
+                        <input type="file">
+                        <span>浏览</span>
+                    </div>
+                    <p class="note">请按照csv模板文件格式制作csv文件</p>
+                </div>
+                <p class="download">
+                    <i class="iconfont">&#xe64d;</i>下载csv模板
+                </p>
+                <div class="save">
+
+                    <button class="button-sub" type="submit">保存</button>
+                </div>
+            </div>
+        </div>
+        <!--编辑用户蒙版-->
+        <div class="popup popup-edit-user">
+            <!--头部-->
+            <header class="bar bar-nav">
+                <button class="button button-link button-nav pull-left close-popup" data-popup=".popup-edit-user">
+                    <span class="icon icon-left"></span>
+                </button>
+                <h1 class="title">编辑用户</h1>
+            </header>
+            <!--内容区-->
+            <div class="content">
+                <!--主页面内容-->
+                <form action="">
+                    <div class="list-block">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">用&nbsp;&ensp;户&nbsp;名：</div>
+                                        <div class="item-input">
+                                            <input type="text" value="hattyxiaoniao">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</div>
+                                        <div class="item-input">
+                                            <input type="password" value="000000">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">所属部门：</div>
+                                        <div class="item-input">
+                                            <select>
+                                                <option>研发部</option>
+                                                <option>Female</option>
+                                            </select>
+                                        </div>
+                                        <i class="iconfont down">&#xe63e;</i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">角&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;色：</div>
+                                        <div class="item-input">
+                                            <select>
+                                                <option>超级管理员</option>
+                                                <option>Female</option>
+                                                <option>Female</option>
+                                                <option>Female</option>
+                                                <option>Female</option>
+                                            </select>
+                                        </div>
+                                        <i class="iconfont down">&#xe63e;</i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位：</div>
+                                        <div class="item-input">
+                                            <input type="text" value="前端工程师">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">手&nbsp;&ensp;机&nbsp;号：</div>
+                                        <div class="item-input">
+                                            <input type="number" value="18301905314">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</div>
+                                        <div class="item-input">
+                                            <input type="email" value="1805657226@qq.com">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">序&nbsp;&ensp;列&nbsp;号：</div>
+                                        <div class="item-input">
+                                            <input type="number" placeholder="请输入令牌序列号">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="serial-number-li">
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <p>
+                                            请输入KEY上的令牌序列号
+                                            <i class="iconfont">&#xe62d;</i>
+                                        </p>
+                                        <img src="./images/z.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="reset-pwd">
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <a href="#" class="button button-big button-fill button-danger">重置密码</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="delete-user">
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <a href="#" class="button button-big button-fill button-success">删除用户</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-block ">
+                        <div class="row">
+                            <div>
+                                <a href="#" class="button">保存</a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="bar bar-tab delete-tab simple-tab hide">
+                        <p class="cancel">
+                            <button type="reset" class="left close-checked-tab">取消</button>
+                            <span>已选定<em>2</em>个</span>
+                            <a href="##">
+                                <button class="right delete">删除</button>
+                            </a>
+                        </p>
+                    </nav>
+                </form>
+            </div>
+            <!--选中尾部工具栏-->
+            <nav class="bar bar-tab checked-tab tab-del hide">
+                <p class="cancel">
+                    <button type="reset" class="left close-checked-tab">取消</button>
+                    <span>确认删除？</span>
+                    <button class="right">删除</button>
+                </p>
+            </nav>
+            <!--选中尾部工具栏-->
+            <nav class="bar bar-tab checked-tab tab-reset hide">
+                <p class="cancel">
+                    <button type="reset" class="left close-checked-tab">取消</button>
+                    <span>确认重置密码为：<em class="re-pwd">66666</em>？</span>
+                    <button class="right reset">重置</button>
+                </p>
+            </nav>
+        </div>
+        <!--编辑角色-->
+        <div class="popup popup-edit-role">
+            <!--头部-->
+            <header class="bar bar-nav">
+                <button class="button button-link button-nav pull-left close-popup" data-popup=".popup-edit-role">
+                    <span class="icon icon-left"></span>
+                </button>
+                <h1 class="title">编辑角色</h1>
+            </header>
+            <!--内容区-->
+            <div class="content">
+                <div class="list-block">
+                    <ul class="role-name">
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">角&ensp;色&ensp;名&ensp;称</div>
+                                    <div class="item-input">
+                                        <input type="text" placeholder="角色名称">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-email"></i></div>
+                                <div class="item-inner last-item-inner">
+                                    <div class="item-title label">扩展名限制</div>
+                                    <div class="item-input">
+                                        <input type="email">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="note">用户名限制多个用“/”隔开，如php/js/py</p>
+                    <h2 class="title-ul user-manage">用户管理</h2>
+                    <ul class="user-manage">
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">查看</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">新增</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">编辑</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner last-item-inner">
+                                    <div class="item-title label">删除</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h2 class="title-ul upload-and-download">上传下载</h2>
+                    <ul class="upload-and-download">
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">上传</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner last-item-inner">
+                                    <div class="item-title label">下载</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h2 class="title-ul log-details">日志管理</h2>
+                    <ul class="log-details">
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner last-item-inner">
+                                    <div class="item-title label">查看</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h2 class="title-ul file-manage">文件管理</h2>
+                    <ul class="file-manage">
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">上传</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">下载</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">分享</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">删除</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">重命名</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">复制</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">移动</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner last-item-inner">
+                                    <div class="item-title label">新建文件夹</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h2 class="title-ul share-manage">分享管理</h2>
+                    <ul class="Framework">
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">我的分享</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner last-item-inner">
+                                    <div class="item-title label">分享给我</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h2 class="title-ul framework">组织架构</h2>
+                    <ul class="framework">
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner last-item-inner">
+                                    <div class="item-title label">查看</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h2 class="title-ul common-resource">公共资源</h2>
+                    <ul class="common-resource">
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">查看</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner last-item-inner">
+                                    <div class="item-title label">下载</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h2 class="title-ul system-settings">系统设置</h2>
+                    <ul class="system-settings">
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">云端节点管理</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">管理系统参数</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                                <div class="item-inner last-item-inner">
+                                    <div class="item-title label">组织架构设置</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-block">
+                    <div class="row">
+                        <div class="col-100"><a href="#" class="button button-big button-fill button-orange">保存</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--添加用户组-->
+        <div class="popup popup-rename">
+            <div class="content-block">
+                <div class="content-padded grid-demo">
+                    <h1>添加用户组</h1>
+                    <span class="warning"></span>
+                    <div class="rename-input">
+                        <input id="showName" type="text">
+                        <i class="iconfont name-delete">&#xe651;</i>
+                    </div>
+                    <button type="reset" class="left cancel close-popup" data-popup=".popup-rename">取消</button>
+                    <button class="right confirm">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!--[if lt IE 9]>
+<script src="lib/html5shiv.min.js"></script>
+<script src="lib/respond.min.js"></script>
+<![endif]-->
+<script src="js/common.js"></script>
+<script src="js/authority-manage.js"></script>
+</html>

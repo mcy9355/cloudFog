@@ -1,0 +1,6 @@
+require('./public');
+$.init();
+$(function () {
+
+
+});

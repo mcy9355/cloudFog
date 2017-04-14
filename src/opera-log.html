@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>权限管理</title>
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/opera-log.css">
+</head>
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-current" id='routers-index'>
+        <!--头部-->
+        <header class="bar bar-nav">
+            <!--头部有logo部分-->
+            <div class="sprite sprite-logo"></div>
+            <a class="button button-link button-nav pull-right" href="#" data-transition='slide-out'>
+                Administrator
+                <span class="icon icon-down open-popup" data-popup=".popup-classify"></span>
+                <span class="icon icon-up close-popup hide"></span>
+            </a>
+        </header>
+        <!--内容区-->
+        <div class="content">
+            <div class="page-index tabContent user" id="user">
+                <div class="card head-card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row no-gutter role">
+                                <div class="col-17">
+                                    <span>日期</span>
+                                </div>
+                                <div class="col-83">
+                                    <input class="start-date" type="text" data-toggle='date'/>
+                                    <i class="iconfont start-date-icon">&#xe666;</i>
+                                    <span class="line">-</span>
+                                    <input class="end-date" type="text" data-toggle='date'/>
+                                    <i class="iconfont end-date-icon">&#xe666;</i>
+                                </div>
+                            </div>
+                            <div class="row no-gutter">
+                                <div class="col-17">
+                                    <span>动作</span>
+                                </div>
+                                <div class="col-83">
+                                    <select name="" id="">
+                                        <option value="">上传</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="searchbar row">
+                                <div class="search-input col-70">
+                                    <label class="icon icon-search"></label>
+                                    <input type="search" id='searchInput'/>
+                                </div>
+                                <a class="button button-fill button-primary col-30">搜索</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="opera-log-title">操作日志<span>（10）</span></h2>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row">
+                                <div class="col-30">
+                                    <span>操作时间</span>：
+                                </div>
+                                <div class="col-70">
+                                    <span>2016/06/08&nbsp;</span>
+                                    <span>15:32</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-30">
+                                    <span>操作人员</span>：
+                                </div>
+                                <div class="col-70">
+                                    <span>用户A</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-30">
+                                    <span class="ip-address">IP地址</span>：
+                                </div>
+                                <div class="col-70">
+                                    <span>192.168.31.36（Web端）</span>
+                                </div>
+                            </div>
+                            <div class="row  specific-object">
+                                <div class="col-30">
+                                    <span>具体对象</span>：
+                                </div>
+                                <div class="col-70">
+                                    <div>
+                                        上传<a href="##">camer278214981.mov</a>
+                                    </div>
+                                </div>
+                                <p class="end-address">到<a href="##">项目管理/啦啦啦啦</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row">
+                                <div class="col-30">
+                                    <span>操作时间</span>：
+                                </div>
+                                <div class="col-70">
+                                    <span>2016/06/08&nbsp;</span>
+                                    <span>15:32</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-30">
+                                    <span>操作人员</span>：
+                                </div>
+                                <div class="col-70">
+                                    <span>用户A</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-30">
+                                    <span class="ip-address">IP地址</span>：
+                                </div>
+                                <div class="col-70">
+                                    <span>192.168.31.36（Web端）</span>
+                                </div>
+                            </div>
+                            <div class="row  specific-object">
+                                <div class="col-30">
+                                    <span>具体对象</span>：
+                                </div>
+                                <div class="col-70">
+                                    <span>
+                                        上传
+                                        <a href="##">camer278214981.mov</a>
+                                    </span>
+
+                                </div>
+                                <p class="end-address">
+                                    到<a href="##">项目管理/啦啦啦啦</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row">
+                                <div class="col-30">
+                                    <span>操作时间</span>：
+                                </div>
+                                <div class="col-70">
+                                    <span>2016/06/08&nbsp;</span>
+                                    <span>15:32</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-30">
+                                    <span>操作人员</span>：
+                                </div>
+                                <div class="col-70">
+                                    <span>用户A</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-30">
+                                    <span class="ip-address">IP地址</span>：
+                                </div>
+                                <div class="col-70">
+                                    <span>192.168.31.36（Web端）</span>
+                                </div>
+                            </div>
+                            <div class="row  specific-object">
+                                <div class="col-30">
+                                    <span>具体对象</span>：
+                                </div>
+                                <div class="col-70">
+                                    <span>
+                                        上传
+                                        <a href="##">camer278214981.mov</a>
+                                    </span>
+
+                                </div>
+                                <p class="end-address">
+                                    到<a href="##">项目管理/啦啦啦啦</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--尾部工具栏-->
+        <nav class="bar bar-tab normal-tab">
+            <a class="tab-item external" href="cloud-config.html">
+                <span class="icon iconfont">&#xe656;</span>
+                <span class="tab-label">云配置</span>
+            </a>
+            <a class="tab-item external" href="authority-manage.html">
+                <span class="icon iconfont">&#xe655;</span>
+                <span class="tab-label">权限管理</span>
+            </a>
+            <a class="tab-item external active" href="opera-log.html">
+                <span class="icon iconfont">&#xe657;</span>
+                <span class="tab-label">操作日志</span>
+            </a>
+            <a class="tab-item external" href="opera-queue.html">
+                <span class="icon iconfont">&#xe654;</span>
+                <span class="tab-label">操作队列</span>
+            </a>
+            <a class="tab-item external" href="system-config.html">
+                <span class="icon iconfont">&#xe658;</span>
+                <span class="tab-label">系统配置</span>
+            </a>
+        </nav>
+    </div>
+</div>
+</body>
+<!--[if lt IE 9]>
+<script src="lib/html5shiv.min.js"></script>
+<script src="lib/respond.min.js"></script>
+<![endif]-->
+<script src="js/common.js"></script>
+<script src="js/opera-log.js"></script>
+</html>

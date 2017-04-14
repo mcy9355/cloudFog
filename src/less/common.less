@@ -1,0 +1,550 @@
+//---------------------------------引入外部文件开始
+@import "variables";
+@import (inline)"../css/sprite.css";
+@import (inline)"../css/iconfont.css";
+//@import (inline)"../css/reset.css";
+//@font-face {
+//  font-family: 'iconfont';  /* project id 219299 */
+//  src: url('//at.alicdn.com/t/font_y9jgma3g59gujtt9.eot');
+//  src: url('//at.alicdn.com/t/font_y9jgma3g59gujtt9.eot?#iefix') format('embedded-opentype'),
+//  url('//at.alicdn.com/t/font_y9jgma3g59gujtt9.woff') format('woff'),
+//  url('//at.alicdn.com/t/font_y9jgma3g59gujtt9.ttf') format('truetype'),
+//  url('//at.alicdn.com/t/font_y9jgma3g59gujtt9.svg#iconfont') format('svg');
+//}
+//@font-face {
+//  /* font-properties */
+//  font-family: PingFang;
+//  src:url('../fonts/PingFang Bold.ttf'),
+//  url('../fonts/PingFang ExtraLight.ttf'),
+//  url('../fonts/PingFang Heavy.ttf'),
+//  url('../fonts/PingFang Light.ttf'),
+//  url('../fonts/PingFang Medium.ttf'),
+//  url('../fonts/PingFang Regular.ttf');
+//}
+//----------------------------------引入外部文件结束
+//----------------------------------设置图标样式开始
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:1.2rem;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+//----------------------------------设置图标样式结束
+//----------------------------------重置样式开始
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: PingFang;
+}
+li{
+  list-style: none;
+}
+select,input{
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
+select::-ms-expand {
+  display: none;
+}
+.hide{
+  display: none;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+//----------------------------------重置样式结束
+//----------------------------------蒙版消除开始
+.popup-overlay {
+  display: none;
+}
+//----------------------------------蒙版消除结束
+//----------------------------------设置复选框样式开始
+.cloudfog-checkbox {
+  position: relative;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 0.05rem solid @border-input;
+  i {
+    position: absolute;
+    top: -0.22rem;
+    left: -0.06rem;
+    color: @text-orange;
+    display: none;
+    font-size: 0.74rem;
+  }
+  input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    width: 0.75rem;
+    height: 0.75rem;
+    z-index: 9;
+    cursor: pointer;
+    &:checked {
+      + i {
+        display: block;
+      }
+    }
+  }
+}
+//----------------------------------设置复选框样式结束
+//----------------------------------设置单选框样式开始
+.cloudfog-radio{
+  position: relative;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 1px solid @border-radio;
+  border-radius: 50%;
+  background-color: @bg-radio;
+  i{
+    display: none;
+    position: absolute;
+    //display: inline-block;
+    left: 0.06rem;
+    top: 0.06rem;
+    width: 0.55rem;
+    height: 0.55rem;
+    background: @radio-fill;
+    border-radius: 50%;
+  }
+  input[type=radio] {
+    position: absolute;
+    top: -0.075rem;
+    left: -0.125rem;
+    opacity: 0;
+    width: 0.65rem;
+    height: 0.65rem;
+    z-index: 9;
+    cursor: pointer;
+    &:checked {
+      + i {
+        display: block;
+      }
+    }
+  }
+}
+//----------------------------------设置单选框样式结束
+//----------------------------------设置头部有logo部分开始
+header.bar-nav{
+  padding: 0;
+  //height: @header-height;
+  background-color: @bg-darkblue;
+  .sprite{
+    display: inline-block;
+    margin: 0.35rem 0 0rem 0.5rem;
+  }
+  .button{
+    display: inline-block;
+    width: 3.5rem;
+    height: 2.2rem;
+    color: @text-white;
+    font-size: 0.8rem;
+    padding-right: 0.65rem;
+    text-align: right;
+    //margin-right: 0.65rem;
+  }
+  h1{
+    color: @text-white;
+  }
+  .button.pull-left{
+    margin: 0;
+    width: 2.5rem;
+  }
+}
+//----------------------------------设置头部有logo部分结束
+//----------------------------------设置中间内容部分开始
+.content{
+  background-color: @bg-content;
+}
+//----------------------------------设置中间内容部分结束
+//----------------------------------设置尾部工具栏开始
+.bar-tab{
+  background-color: @bg-lightblue;
+  .tab-item{
+    color: @text-tool;
+  }
+  .tab-item.active{
+    color: @text-orange;
+  }
+  .tab-disable{
+    color: @text-info;
+  }
+}
+//----------------------------------设置尾部工具栏结束
+//----------------------------------用户端选中情况下尾部工具栏开始
+.delete-tab{
+  height: 5rem;
+  .tab-item{
+    height: 3rem;
+    color: @text-tool;
+    .tab-label{
+      font-size: 0.55rem;
+    }
+  }
+  .cancel{
+    height: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    color: @text-white;
+    text-align: center;
+    margin: 0;
+    span{
+      line-height: 1.4rem;
+      font-size: 0.75rem;
+      em{
+        font-style: normal;
+      }
+    }
+    button{
+      display: inline-block;
+      width: 2.7rem;
+      height: 1.4rem;
+      background-color: @bg-lightblue;
+      border: 1px solid rgba(255,255,255,0.5);
+      border-radius: 3px;
+      font-size: 0.6rem;
+    }
+    a{
+      button{
+        color: @text-white;
+      }
+    }
+  }
+}
+.simple-tab{
+  .cancel{
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+    .delete{
+      background-color: @bg-button-red;
+      border: none;
+    }
+  }
+}
+.checked-content{
+  bottom:5rem;
+}
+.checked-tab{
+  box-sizing: border-box;
+  height: 5rem;
+  padding-top: 0.5rem;
+  .cancel{
+    padding: 0 0.5rem;
+    text-align: center;
+    margin: 0;
+    padding-top: 0.3rem;
+    border-top: 1px solid @border-relative;
+    span{
+      color: @text-white;
+      font-size: 0.7rem;
+      em{
+        font-style: normal;
+      }
+    }
+    button{
+      display: inline-block;
+      width: 2.7rem;
+      height: 1.4rem;
+      line-height: 1.4rem;
+      border-radius: 4px;
+      background-color: @bg-lightblue;
+      border: 1px solid @border-button;
+      color: @text-white;
+      font-size: 0.55rem;
+      input{
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+      }
+    }
+  }
+}
+//----------------------------------用户端选中情况下尾部工具栏结束
+.footer-tab-save{
+  height: 3.25rem;
+  background-color: @bg-content;
+  padding: 0 0.8rem;
+  button[type=submit]{
+    width: 100%;
+    height: 2.5rem;
+    background-color: @text-orange;
+    color: @text-white;
+    font-size: 1.05rem;
+  }
+}
+//----------------------------------排序和分享页面的分享蒙版开始
+.popup-share-menu,.popup-rank{
+  position: relative;
+  background-color: rgba(255,255,255,0);
+  .content-block{
+    position: absolute;
+    left: 2rem;
+    top:3.6rem;
+    background-color: rgba(255,255,255,0);
+    width: 8rem;
+    height: 8rem;
+    margin: 0;
+    padding: 1rem 0 0.5rem 0;
+    .content-padded{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding: 0;
+      margin: 0;
+      background-color: rgba(62,65,69,0.8);
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      ul{
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        padding: 0.2rem 0.4rem 0 0.4rem;
+        li{
+          height: 33%;
+          //line-height: 33%;
+          color: @text-white;
+          border-bottom: 0.025rem solid rgba(225,225,225,0.2);
+          font-size: 0.7rem;
+          text-align: center;
+          padding-top: 0.5rem;
+        }
+        li.active{
+          color: @text-orange;
+        }
+      }
+    }
+    .content-padded:before{
+      content: "";
+      position: absolute;
+      left: 1.5rem;
+      top:-0.6rem;
+      width: 0;
+      height:0;
+      border-left: 0.3rem solid transparent;
+      border-bottom: 0.6rem solid rgba(62,65,69,0.8);
+      border-right: 0.3rem solid transparent;
+    }
+  }
+}
+//----------------------------------排序和分享页面的分享蒙版开始
+//----------------------------------添加蒙版开始
+.popup-add{
+  position: relative;
+  .content-block{
+    padding: 0;
+    margin: 0;
+    .webuploader-element-invisible{
+      opacity: 0;
+    }
+    .content-padded{
+      text-align: center;
+      padding: 6rem 0 0 0;
+      margin: 0;
+      //所有图标样式
+      .no-gutter.row-icon{
+        //height: 3.2rem;
+        i{
+          font-size: 3.2rem;
+        }
+      }
+      //所有文字样式
+      .no-gutter.row-comment{
+        height: 1.1rem;
+        p{
+          margin: 0;
+          height: 0.9rem;
+          line-height: 0.9rem;
+          font-size: 0.7rem;
+          color: @text-black;
+        }
+      }
+      .row-icon-one{
+        .col-100{
+          i{
+            color: @icon-file;
+          }
+        }
+      }
+      .row-icon-two{
+        .col-100{
+          i{
+            color: @icon-yellow;
+          }
+        }
+      }
+      .cancel{
+        width: 100%;
+        height: 2.25rem;
+        font-size: 0.8rem;
+        line-height: 2.25rem;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        background-color: @bg-white;
+        color: @text-blue-cancel;
+      }
+    }
+  }
+}
+//----------------------------------添加蒙版结束
+//----------------------------------搜索蒙版开始
+.popup-search{
+  background-color: rgba(0,0,0,0.8);
+  .content-block{
+    height: 5.35rem;
+    margin: 0;
+    padding: 0;
+    .content-padded{
+      height: 5.35rem;
+      margin: 0;
+      .bar-nav{
+        height: 3.1rem;
+        width: 100%;
+        h1{
+          height: 3.1rem;
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+//----------------------------------搜索蒙版结束
+//----------------------------------重命名蒙版开始
+.popup-rename{
+  background-color: rgba(0,0,0,0.5);
+  .content-block{
+    padding: 0;
+    margin: 0;
+    .content-padded{
+      width: 13.5rem;
+      height: 8rem;
+      background-color: @text-white;
+      text-align: center;
+      margin: 3rem auto;
+      padding: 0;
+      box-sizing: border-box;
+      border-radius: 0.25rem;
+      h1{
+        //background-color: @text-orange;
+        height: 2.3rem;
+        line-height: 2.3rem;
+        font-size: 0.9rem;
+        color: @text-black;
+        font-weight: bold;
+        margin: 0;
+        border-radius: 0.25rem 0.25rem 0 0;
+      }
+      .warning{
+        display: block;
+        width: 100%;
+        height: 0.5rem;
+        font-size: 0.6rem;
+        color: @text-red;
+      }
+      .rename-input{
+        height: 3.45rem;
+        color: @text-black;
+        font-size: 0.8rem;
+        margin-top: 0.8rem;
+        padding: 0 0.5rem;
+        position: relative;
+        input{
+          width: 100%;
+          height: 1.75rem;
+          background-color: @bg-gray;
+          border: 1px solid @border-input;
+          font-size: 0.8rem;
+          padding-left: 0.4rem;
+          border-radius: 3px;
+        }
+        i{
+          position: absolute;
+          right:0.9rem;
+          top:0.46rem;
+          font-size: 0.7rem;
+          color: @text-gray;
+        }
+      }
+      button{
+        width: 50%;
+        height: 2.2rem;
+        background-color: @text-white;
+        border: none;
+        border-top: 1px solid @border-input;
+        color: @text-blue;
+        border-radius: 0 0 0.25rem 0;
+      }
+      .cancel{
+        border: none;
+        border-top: 1px solid @border-input;
+        border-right: 1px solid @border-input;
+        border-radius: 0 0 0 0.25rem;
+      }
+    }
+  }
+}
+//----------------------------------重命名蒙版结束
+//----------------------------------详细信息开始
+.popup-detail {
+  .content-block {
+    .content-padded {
+      header {
+        height: 2.2rem;
+        h1{
+          margin: 0;
+        }
+      }
+      .content {
+        top:2.2rem!important;
+        bottom: 2.5rem;
+        background-color: @text-white;
+        padding-top: 1.25rem;
+        .row{
+          font-size: 0.7rem;
+          margin: 0;
+          .col-30{
+            width: 30%;
+            color: @text-gray2;
+            text-align: right;
+            padding-right: 0.75rem;
+          }
+          .col-70{
+            width: 70%;
+            color: @text-black;
+          }
+        }
+      }
+    }
+  }
+}
+//----------------------------------详细信息结束
+//----------------------------------操作开始
+.actions-modal{
+  background-color: @bg-operation;
+  .actions-modal-group{
+    margin: 0;
+    .actions-modal-button{
+      border-radius: 0;
+      background-color: @text-white;
+      color: @text-black;
+      font-size: 0.8rem;
+    }
+  }
+  .actions-modal-group:last-child{
+    margin-top: 0.5rem;
+    .actions-modal-button{
+      color: @text-blue-cancel;
+    }
+  }
+}
+//----------------------------------操作结束

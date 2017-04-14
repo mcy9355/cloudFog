@@ -1,0 +1,20 @@
+
+.sprite {
+  background-image: url('../images/sprite.png');
+}
+
+.sprite-logo {
+  background-position: -0px -0px;
+  width: 126px;
+  height: 30px;
+}
+.sprite-logo2x {
+  background-position: -0px -30px;
+  width: 244px;
+  height: 52px;
+}
+.sprite-logo3x {
+  background-position: -0px -82px;
+  width: 362px;
+  height: 74px;
+}

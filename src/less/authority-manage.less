@@ -1,0 +1,670 @@
+@import "variables";
+//头部设置高度
+header.bar-nav {
+  .button {
+    width: 7rem;
+  }
+}
+
+//内容区
+.content {
+  bottom: 2.5rem;
+  .buttons-tab {
+    .tab-link {
+      height: 2.25rem;
+      text-align: center;
+      padding: 0;
+    }
+    .tab-link.active {
+      color: @text-orange;
+      border-color: @text-orange;
+    }
+  }
+  .content-block {
+    margin: 0;
+    padding: 0;
+    .tabs {
+      #user, #userGroup, #framework {
+        .content-block {
+          .head-card {
+            margin: 0;
+            border: none;
+            box-shadow: none;
+            border-radius: 4px;
+            .card-content {
+              height: 100%;
+              .card-content-inner {
+                padding: 0;
+                height: 100%;
+                .row {
+                  font-size: 0.7rem;
+                  color: @text-black2;
+                  height: 2.4rem;
+                  .col-17 {
+                    width: 17%;
+                    padding-left: 0.7rem;
+                    span, i {
+                      display: block;
+                    }
+                    span {
+                      line-height: 1.8rem;
+                      letter-spacing: 0.26rem;
+                    }
+                    i {
+                      color: @text-orange;
+                      font-size: 1.72rem;
+                      margin-top: -0.36rem;
+                    }
+                  }
+                  .col-83 {
+                    height: 2.4rem;
+                    width: 83%;
+                    padding-right: 0.8rem;
+                    .searchbar {
+                      padding: 0;
+                    }
+                    input, select {
+                      display: block;
+                      height: 1.8rem;
+                      width: 100%;
+                      border: 1px solid @border-gray2;
+                      border-radius: 2px;
+                      padding-left: 0.5rem;
+                    }
+                    input[type=search] {
+                      padding-left: 1.4rem;
+                    }
+                  }
+                }
+                .row-tab {
+                  height: 2.25rem;
+                  text-align: center;
+                  padding: 0;
+                  border-bottom: 1px solid @border-gray3;
+                  .col-33 {
+                    height: 2.25rem;
+                    span {
+                      line-height: 2.25rem;
+                    }
+                  }
+                }
+                .role {
+                  position: relative;
+                  i.down {
+                    position: absolute;
+                    right: 1.2rem;
+                    top: 0.2rem;
+                    font-size: 0.9rem;
+                    color: @text-gray;
+                  }
+                }
+              }
+            }
+          }
+          .list-block {
+            margin: 0.5rem 0 0 0;
+            .item-content{
+              background-color: @text-white;
+              //border-bottom: 1px solid #e5e5e5;
+              position: static!important;
+              .item-inner {
+                position: static!important;
+              }
+            }
+            ul {
+              li {
+                padding: 0;
+                border-bottom: 1px solid @border-gray2;
+                position: static!important;
+                label {
+                  display: inline-block;
+                  margin: 0 0.5rem 0 0.8rem;
+                }
+                .item-inner {
+                  padding: 0;
+                  margin: 0;
+                  position: static!important;
+                }
+              }
+            }
+          }
+        }
+      }
+      #user, #userGroup {
+        .content-block {
+          .head-card {
+            .card-content {
+              .card-content-inner {
+                padding-top: 0.6rem;
+              }
+            }
+          }
+        }
+      }
+      #framework {
+        .head-card {
+          height: 2.25rem;
+        }
+        .list-block {
+          margin: 0;
+          ul{
+            background-color: @text-white;
+            padding: 0;
+            li{
+              width: 100%;
+              line-height: 2.25rem;
+              padding-left: 0.8rem !important;
+              .iconfont{
+                height: 2.25rem;
+                width: 1rem;
+                display: inline-block;
+                vertical-align: middle;
+                transform:rotate(-90deg);
+                -ms-transform:rotate(-90deg); 	/* IE 9 */
+                -moz-transform:rotate(-90deg); 	/* Firefox */
+                -webkit-transform:rotate(-90deg); /* Safari 和 Chrome */
+                -o-transform:rotate(-90deg); 	/* Opera */
+              }
+              .iconfont.open{
+                transform:rotate(0deg);
+                -ms-transform:rotate(0deg); 	/* IE 9 */
+                -moz-transform:rotate(0deg); 	/* Firefox */
+                -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+                -o-transform:rotate(0deg); 	/* Opera */
+              }
+            }
+            ul{
+              li{
+                padding-left: 1.6rem !important;
+              }
+              ul{
+                li{
+                  padding-left: 2.4rem !important;
+                }
+                ul{
+                  li{
+                    padding-left: 3.2rem !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//选中尾部工具栏
+.checked-tab {
+  height: 2.45rem;
+  padding-top: 0.3rem;
+  .cancel {
+    border-top: none;
+    button.right.active {
+      background-color: @bg-button-red;
+      color: @text-white;
+      border: none;
+    }
+  }
+}
+
+//操作表
+.actions-modal {
+  background-color: @bg-operation;
+  .actions-modal-group {
+    margin: 0;
+    .actions-modal-label {
+      display: none;
+    }
+    .actions-modal-button {
+      border-radius: 0;
+      background-color: @text-white;
+      color: @text-black;
+      font-size: 0.8rem;
+    }
+  }
+  .actions-modal-group:last-child {
+    margin-top: 0.5rem;
+    span {
+
+      color: @text-blue-cancel;
+    }
+  }
+
+}
+.popup-add-user, .popup-add-user-group {
+  header {
+    .title {
+      margin: 0;
+    }
+  }
+  //添加用户
+  .content {
+    top:2.2rem;
+    form{
+      padding-bottom: 3.325rem;
+      font-size: 0.65rem;
+      position: relative;
+      .list-block{
+        margin: 1rem 0 0 0;
+        ul{
+          li{
+            height: 2.25rem;
+            border-bottom: 1px solid @border-gray2;
+            .item-content{
+              height: 2.25rem;
+              .item-inner{
+                height: 2.25rem;
+                position: relative;
+                border-bottom: none;
+                .item-title{
+                  color: @text-gray3;
+                  display: inline-block;
+                  width: 31%;
+                  height: 2.25rem;
+                  margin: 0;
+                  padding-top: 0.5rem;
+                }
+                .item-input{
+                  display: inline-block;
+                  color: @text-black;
+                  width: 69%;
+                  height: 2.25rem;
+                  input,select{
+                    height: 2.25rem;
+                    width: 100%;
+                    z-index: 10;
+                  }
+                }
+                i.down{
+                  position: absolute;
+                  right: 1.2rem;
+                  color: @text-gray;
+                  z-index: 1;
+                }
+              }
+            }
+          }
+          .serial-number-li{
+            height: 8rem;
+            padding: 0 0.75rem;
+            .item-content{
+              height: 8rem;
+              padding: 0;
+              .item-inner{
+                height: 8rem;
+                padding: 0;
+                display: block;
+                p{
+                  height: 1.5rem;
+                  line-height: 1.5rem;
+                  display: block;
+                  width: 100%;
+                  padding: 0;
+                  margin: 0;
+                  font-size: 0.55rem;
+                  color: @text-red;
+                  i{
+                    font-size: 0.35rem;
+                  }
+                }
+                img{
+                  display: block;
+                  width: 100%;
+                }
+
+              }
+            }
+          }
+        }
+      }
+      .content-block{
+        height: 2.5rem;
+        margin: 0.75rem 0 0.2rem 0;
+        .row{
+          margin: 0;
+          height: 2.5rem;
+          div{
+            height: 2.5rem;
+            a{
+              display: block;
+              width: 100%;
+              height: 2.5rem;
+              line-height: 2.5rem;
+              box-sizing: border-box;
+              padding: 0;
+              margin: 0;
+              background-color: @text-orange;
+              color: @text-white;
+              border: none;
+              font-size: 1rem;
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //批量导入用户
+  .content {
+    bottom: 0;
+    .bg-white {
+      background-color: @text-white;
+      padding: 0 0.8rem;
+      overflow: hidden;
+      h2 {
+        color: @text-black;
+        font-size: 0.7rem;
+        height: 1.8rem;
+        padding-top: 0.5rem;
+      }
+      .scan {
+        position: relative;
+        border: 1px solid @border-gray2;
+        input {
+          width: 100%;
+          height: 1.8rem;
+          //padding: 0 0.75rem 0 0.6rem;
+          color: #303030;
+          font-size: 0.7rem;
+          border: 1px solid @border-gray2;
+          cursor: pointer;
+          outline: medium none;
+          filter: alpha(opacity=0);
+          -moz-opacity: 0;
+          opacity: 0;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+        }
+        span {
+          position: absolute;
+          right: 0;
+          top: 0;
+          display: inline-block;
+          width: 3.4rem;
+          height: 1.8rem;
+          background-color: @bg-scan;
+          text-align: center;
+          font-size: 0.7rem;
+          color: @text-gray3;
+          padding: 0.4rem 0 0 1rem;
+          letter-spacing: 0.5rem;
+        }
+      }
+      p.note {
+        margin: 0;
+        height: 1.55rem;
+        padding-top: 0.3rem;
+        font-size: 0.55rem;
+        color: @text-gray2;
+      }
+    }
+    .download {
+      background-color: @text-white;
+      padding: 0 0.8rem;
+      margin: 0.5rem 0 0 0;
+      color: @text-orange;
+      font-size: 0.7rem;
+      .iconfont {
+        font-size: 1.1rem;
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.2rem;
+      }
+    }
+    .save{
+      width: 100%;
+      padding: 0 0.8rem;
+      height: 2.5rem;
+      margin-top: 15rem;
+      .button-sub {
+        width: 100%;
+        height: 100%;
+        background-color: @text-orange;
+        color: @text-white;
+      }
+    }
+
+  }
+}
+.popup-edit-user{
+  header.bar-nav {
+    h1 {
+      margin: 0;
+    }
+  }
+  .content {
+    bottom:0;
+    form{
+      padding-bottom: 3.325rem;
+      font-size: 0.65rem;
+      position: relative;
+      .list-block{
+        margin: 1rem 0 0 0;
+        ul{
+          li{
+            height: 2.25rem;
+            border-bottom: 1px solid @border-gray2;
+            font-size: 0.7rem;
+            .item-content{
+              height: 2.25rem;
+              .item-inner{
+                height: 2.25rem;
+                position: relative;
+                border-bottom: none;
+                .item-title{
+                  display: inline-block;
+                  width: 31%;
+                  height: 2.25rem;
+                  margin: 0;
+                  padding-top: 0.5rem;
+                  color: @text-gray3;
+                }
+                .item-input{
+                  display: inline-block;
+                  color: @text-black;
+                  width: 69%;
+                  height: 2.25rem;
+                  input,select{
+                    height: 2.25rem;
+                    width: 100%;
+                    z-index: 10;
+                    font-size: 0.7rem;
+                    color: @text-black;
+                  }
+                }
+                i.down{
+                  position: absolute;
+                  right: 1.2rem;
+                  color: @text-gray;
+                  z-index: 1;
+                }
+              }
+            }
+          }
+          .serial-number-li{
+            height: 8rem;
+            padding: 0 0.75rem;
+            .item-content{
+              height: 8rem;
+              padding: 0;
+              .item-inner{
+                height: 8rem;
+                padding: 0;
+                display: block;
+                p{
+                  height: 1.5rem;
+                  line-height: 1.5rem;
+                  display: block;
+                  width: 100%;
+                  padding: 0;
+                  margin: 0;
+                  font-size: 0.55rem;
+                  color: @text-red;
+                  i{
+                    font-size: 0.35rem;
+                  }
+                }
+                img{
+                  display: block;
+                  width: 100%;
+                }
+
+              }
+            }
+          }
+          .reset-pwd,.delete-user{
+            .item-content{
+              .item-inner{
+                padding: 0;
+                a{
+                  display: block;
+                  width: 100%;
+                  height: 2.25rem;
+                  line-height: 2.25rem;
+                  background-color: inherit;
+                  color:@text-red;
+                  padding: 0;
+                  text-align: left;
+                  font-size: 0.7rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      .content-block{
+        height: 2.5rem;
+        margin: 0.75rem 0 0.2rem 0;
+        .row{
+          margin: 0;
+          height: 2.5rem;
+          div{
+            height: 2.5rem;
+            a{
+              display: block;
+              width: 100%;
+              height: 2.5rem;
+              line-height: 2.5rem;
+              box-sizing: border-box;
+              padding: 0;
+              margin: 0;
+              background-color: @text-orange;
+              color: @text-white;
+              border: none;
+              font-size: 1rem;
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .checked-content{
+    bottom:2.2rem;
+  }
+  //选中尾部工具栏
+  .checked-tab {
+    height: 2.45rem;
+    padding-top: 0.3rem;
+    .cancel {
+      border-top: none;
+      button.right {
+        background-color: @bg-button-red;
+        color: @text-white;
+        border: none;
+      }
+      button.right.reset{
+        background-color: @text-orange;
+      }
+    }
+  }
+}
+.popup-edit-role{
+  .content{
+    bottom:0;
+  }
+  .list-block {
+    margin: 1rem 0 0 0;
+    .note {
+      margin: 0;
+      color: @text-gray;
+      font-size: 0.5rem;
+      height: 1.4rem;
+      line-height: 1.4rem;
+      padding-left: 0.8rem;
+    }
+    .title-ul {
+      font-size: 0.6rem;
+      height: 1.85rem;
+      padding-top: 0.85rem;
+      padding-left: 0.8rem;
+    }
+    ul {
+      position: static;
+      //padding: 0;
+      li {
+        //ul{
+        //  padding: 0;
+        //}
+        height: 2.25rem;
+        .item-content {
+          padding-left: 0.8rem;
+          .item-inner {
+            border-bottom: 1px solid @border-gray2;
+            padding-left: 0;
+            margin-left: 0;
+            .item-title {
+              font-size: 0.7rem;
+              color: @text-title1;
+              text-align: justify;
+            }
+            .item-input {
+              float: right;
+              input {
+                color: @text-black;
+                font-size: 0.7rem;
+              }
+              .label-switch {
+                float: right;
+                input[type=checkbox]:checked + .checkbox {
+                  background-color: @text-orange;
+                }
+              }
+            }
+          }
+          .last-item-inner {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    .role-name {
+      li {
+        .item-content {
+          .item-inner {
+            .item-title {
+              text-align-last: justify;
+              width: 3.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .content-block {
+    margin-top: 0.7rem;
+    margin-bottom: 2rem;
+    padding: 0 0.8rem;
+    .row {
+      .button-orange {
+        background-color: @border-orange;
+        border-radius: 0;
+      }
+    }
+  }
+}

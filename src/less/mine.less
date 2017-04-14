@@ -1,0 +1,197 @@
+@import "variables";
+header.bar-nav {
+  height: 2.2rem;
+  //添加排序搜索
+  .opera {
+    width: 100%;
+    height: 2.25rem;
+    background-color: @bg-grey;
+    .col-15, .col-70 {
+      height: 2.25rem;
+      line-height: 2.25rem;
+    }
+    .col-15 {
+      width: 15%;
+      font-size: 1.25rem;
+      overflow: visible;
+      i {
+        display: inline-block;
+        margin: 0 0.15rem 0 0.8rem;
+      }
+    }
+    .col-15:nth-child(1) {
+      i {
+        color: @text-orange;
+      }
+    }
+    .col-15:nth-child(2) {
+      i {
+        color: @icon-gray;
+      }
+    }
+    .col-70 {
+      padding-right: 0.5rem;
+      width: 70%;
+      height: 2.25rem;
+      .searchbar {
+        background-color: @bg-grey;
+        .search-input {
+          input {
+            border: none;
+            height: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+//内容区
+.content {
+  top: 2.2rem !important;
+  bottom: 2.45rem;
+  .tabs{
+    .tab{
+      .content-block{
+        margin: 0;
+        padding: 0;
+        .list-block {
+          margin: 0;
+        }
+        .list {
+          background-color: @text-white;
+          margin: 0.75rem 0 0 0;
+          a.item-content{
+            padding: 0;
+            font-size: 0.7rem;
+            height: 2.2rem;
+            display: block;
+            color: @text-black;
+            border-bottom: 1px solid @border-radio;
+            .item-inner{
+              height: 100%;
+              margin: 0;
+              padding-left: 0.5rem;
+              .item-title{
+                height: 100%;
+                width: 22%;
+                float: left;
+                padding-top: 0.3rem;
+                i.iconfont{
+                  margin-left: 0.5rem;
+                  font-size: 1.1rem;
+                  color: @icon-user;
+                }
+              }
+              .title-width{
+                width: 15%;
+              }
+              .item-after{
+                height: 100%;
+                width: 78%;
+                float: left;
+                input{
+                  height: 100%;
+                  width: 100%;
+                }
+              }
+              .item-after:after{
+                border:none;
+              }
+            }
+          }
+        }
+        p{
+          margin-top: 0.75rem;
+          background-color: @text-white;
+          a.button-light{
+            height: 2.25rem;
+            border-radius: 0;
+            border-color: @border-radio;
+            border-left: none;
+            border-right: none;
+            font-size: 0.7rem;
+            color: @icon-pink;
+            padding-top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+.popup-edit-profile,.popup-pwd{
+  .content-block{
+    width: 100%;
+    height: 100%;
+  }
+}
+.popup-editProfile,.popup-editUser{
+  .content-block{
+    margin: 0;
+    padding: 0;
+    header{
+      .icon-left{
+        color: @text-white;
+      }
+      h1{
+        margin: 0;
+      }
+    }
+    #editUser,#editProfile{
+      bottom: 0;
+      form{
+        ul{
+          background-color: @text-white;
+          margin-top: 0.75rem;
+          li{
+            border-bottom: 1px solid @border-input2;
+            height: 2.25rem;
+            padding-left: 1.1rem;
+            overflow: hidden;
+            position: relative;
+            i{
+              font-size: 1rem;
+              color: @icon-user;
+              line-height: 2.25rem;
+              position: absolute;
+              left: 0.5rem;
+            }
+            input{
+              height: 100%;
+              width: 100%;
+              font-size: 0.75rem;
+              text-indent: 0.5rem;
+            }
+            .note{
+              width: 50%;
+              height: 2.25rem;
+              line-height: 2.25rem;
+              position: absolute;
+              right: 0;
+              top:0;
+              font-size: 0.6rem;
+              text-align: right;
+              padding-right: 0.5rem;
+              color: @text-red;
+            }
+          }
+        }
+        .sub{
+          padding: 0 0.5rem;
+          margin-top: 1.5rem;
+          input{
+            width: 100%;
+            height: 2.25rem;
+            background-color: @text-orange;
+            color: @text-white;
+            border: none;
+            line-height: 2.25rem;
+            font-size: 0.75rem;
+            border-radius: 4px;
+          }
+
+        }
+
+      }
+    }
+  }
+}

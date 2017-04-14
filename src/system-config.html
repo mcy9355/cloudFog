@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/system-config.css">
+</head>
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-current" id='routers-index'>
+        <!--头部-->
+        <header class="bar bar-nav">
+            <!--头部有logo部分-->
+            <div class="sprite sprite-logo"></div>
+            <a class="button button-link button-nav pull-right" href="#" data-transition='slide-out'>
+                Administrator
+                <span class="icon icon-down open-popup" data-popup=".popup-classify"></span>
+                <span class="icon icon-up close-popup hide"></span>
+            </a>
+        </header>
+        <!--内容区-->
+        <div class="content">
+            <div class="buttons-tab">
+                <a href="#dashboard" class="tab-link active button">仪表盘</a>
+                <a href="#ipConfig" class="tab-link button">IP设置</a>
+                <a href="#https" class="tab-link button">https证书</a>
+            </div>
+            <div class="content-block">
+                <div class="tabs">
+                    <div id="dashboard" class="tab active">
+                        <div class="content-block">
+                            <div class="list-block">
+                                <ul>
+                                    <li class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">磁盘容量</div>
+                                            <div class="item-after">24.0GB/115GB</div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">72小时内云传输网络流量</div>
+                                            <div class="item-after">289M</div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">72小时内请求数</div>
+                                            <div class="item-after">597</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ipConfig" class="tab">
+                        <div class="content-block">
+                            <div class="list-block">
+                                <ul>
+                                    <li class="title-h2">
+                                        <h2>连网设置：</h2>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                            <div class="item-inner">
+                                                <!--<div class="item-title label">姓名</div>-->
+                                                <div class="item-input">
+                                                    <select name="" id="">
+                                                        <option value="">静态IP</option>
+                                                        <option value="">DPCH</option>
+                                                    </select>
+                                                    <i class="iconfont">&#xe63e;</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                            <div class="item-inner">
+                                                <div class="item-input">
+                                                    <input type="text" placeholder="IP地址">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                            <div class="item-inner">
+                                                <div class="item-input">
+                                                    <input type="text" placeholder="子网掩码">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                            <div class="item-inner">
+                                                <div class="item-input">
+                                                    <input type="text" placeholder="网关">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                            <div class="item-inner">
+                                                <div class="item-input">
+                                                    <input type="text" placeholder="DNS">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="title-h2">
+                                        <h2>设备访问IP：</h2>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                            <div class="item-inner">
+                                                <div class="item-input">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="title-h2">
+                                        <h2>子网掩码：</h2>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                            <div class="item-inner">
+                                                <div class="item-input">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="save">
+                                        <div class="col-100">
+                                            <a href="#" class="button button-big button-fill">保存</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="https" class="tab">
+                        <div class="content-block">
+                            <div class="list-block">
+                                <ul>
+                                    <li>
+                                        <h2>设置https证书：</h2>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                            <div class="item-inner">
+                                                <div class="item-input">
+                                                    <span class="upload-text">上传</span>
+                                                    <input type="file">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="submit">
+                                        <div class="col-100">
+                                            <a href="#" class="button button-big button-fill">应用</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--尾部工具栏-->
+        <nav class="bar bar-tab normal-tab">
+            <a class="tab-item external" href="cloud-config.html">
+                <span class="icon iconfont">&#xe656;</span>
+                <span class="tab-label">云配置</span>
+            </a>
+            <a class="tab-item external" href="authority-manage.html">
+                <span class="icon iconfont">&#xe655;</span>
+                <span class="tab-label">权限管理</span>
+            </a>
+            <a class="tab-item external" href="opera-log.html">
+                <span class="icon iconfont">&#xe657;</span>
+                <span class="tab-label">操作日志</span>
+            </a>
+            <a class="tab-item external" href="opera-queue.html">
+                <span class="icon iconfont">&#xe654;</span>
+                <span class="tab-label">操作队列</span>
+            </a>
+            <a class="tab-item external active" href="system-config.html">
+                <span class="icon iconfont">&#xe658;</span>
+                <span class="tab-label">系统配置</span>
+            </a>
+        </nav>
+    </div>
+</div>
+</body>
+<!--[if lt IE 9]>
+<script src="lib/html5shiv.min.js"></script>
+<script src="lib/respond.min.js"></script>
+<![endif]-->
+<script src="js/common.js"></script>
+<script src="js/system-config.js"></script>
+</html>

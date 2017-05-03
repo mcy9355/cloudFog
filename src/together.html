@@ -22,15 +22,15 @@
             <!--有搜索框的一栏-->
             <div class="row no-gutter opera">
                 <!--添加按钮-->
-                <!--<div class="col-15">-->
-                <!--<i class="iconfont open-popup" data-popup=".popup-add">&#xe639;</i>-->
-                <!--</div>-->
+                <div class="col-15">
+                    <i class="iconfont open-popup" data-popup=".popup-add">&#xe639;</i>
+                </div>
                 <!--排序按钮-->
-                <div class="col-20">
+                <div class="col-15">
                     <i class="iconfont open-popup" data-popup=".popup-rank">&#xe63f;</i>
                 </div>
                 <!--搜索按钮-->
-                <div class="col-80">
+                <div class="col-70">
                     <div class="searchbar" >
                         <div class="search-input open-popup" data-popup=".popup-search">
                             <label class="icon icon-search" for="search" ></label>
@@ -109,144 +109,288 @@
             </div>
         </div>
         <!--内容区-->
-        <div class="content infinite-scroll infinite-scroll-bottom" data-distance="100">
+        <div class="content close-popup">
             <!--下拉菜单-->
             <!--主页面内容-->
             <div class="page-index">
-                <div class="card-list">
-                    <div class="card head-card">
-                        <div class="card-content">
-                            <div class="card-content-inner">
-                                <div class="row no-gutter">
-                                    <div class="col-100">公共资源</div>
-                                </div>
+                <div class="card head-card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row no-gutter">
+                                <label class="col-12"  for="allFile">
+                                    <div class="cloudfog-checkbox">
+                                        <input type="checkbox" id="allFile">
+                                        <i class="iconfont">&#xe64f;</i>
+                                    </div>
+                                </label>
+                                <div class="col-88">我的分享</div>
                             </div>
                         </div>
                     </div>
-                    <div class="dr">
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-content-inner">
-                                    <div class="row no-gutter">
-                                        <div class="col-12">
-                                            <label for="file1">
-                                                <div class="cloudfog-radio">
-                                                    <input id="file1" class="radio-btn" type="radio" name="myShare">
-                                                    <i class="green-dot"></i>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <div class="col-15">
-                                            <i class="iconfont icon-dir"></i>
-                                        </div>
-                                        <div class="col-73">
-                                            <p>尤克里里之谈几点尤克里里之谈几点尤克里里之谈几点尤克里里之谈几点</p>
-                                            <p>
-                                                <span>2016-11-01</span>
-                                                <span class="right">公共资源</span>
-                                            </p>
-                                        </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row no-gutter">
+                                <label class="col-12"  for="file1">
+                                    <div class="cloudfog-checkbox">
+                                        <input class="check-input" type="checkbox" id="file1">
+                                        <i class="iconfont">&#xe64f;</i>
                                     </div>
+                                </label>
+                                <div class="col-15">
+                                    <div class="sprite sprite-dr"></div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-content-inner">
-                                    <div class="row no-gutter">
-                                        <div class="col-12">
-                                            <label for="file2">
-                                                <div class="cloudfog-radio">
-                                                    <input id="file2" class="radio-btn" type="radio" name="myShare">
-                                                    <i class="green-dot"></i>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <div class="col-15">
-                                            <i class="iconfont icon-dir"></i>
-                                        </div>
-                                        <div class="col-73">
-                                            <p>尤克里里之谈几点</p>
-                                            <p>
-                                                <span>2016-11-02</span>
-                                                <span class="right">所有者:小明</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="file">
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-content-inner">
-                                    <div class="row no-gutter">
-                                        <div class="col-12">
-                                            <div class="cloud-download">
-                                                <i class="iconfont ">&#xe66e;</i>
-                                            </div>
-                                            <div class="infinite-scroll-preloader hide">
-                                                <div class="preloader"></div>
-                                            </div>
-                                            <label for="file1" class="check-hide">
-                                                <div class="cloudfog-radio">
-                                                    <input id="file8" class="radio-btn" type="radio" name="myShare">
-                                                    <i class="green-dot"></i>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <div class="col-15 cloud">
-                                            <i class="iconfont icon-dir"></i>
-                                        </div>
-                                        <div class="col-73 cloud">
-                                            <p>尤克里里之谈几点</p>
-                                            <p>
-                                                <span>2016-11-01</span>
-                                                <span class="right">所有者:小明</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-content-inner">
-                                    <div class="row no-gutter">
-                                        <div class="col-12">
-                                            <div class="cloud-download">
-                                                <i class="iconfont ">&#xe66e;</i>
-                                            </div>
-                                            <div class="infinite-scroll-preloader hide">
-                                                <div class="preloader"></div>
-                                            </div>
-                                            <label for="file1" class="check-hide">
-                                                <div class="cloudfog-radio">
-                                                    <input id="file8" class="radio-btn" type="radio" name="myShare">
-                                                    <i class="green-dot"></i>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <div class="col-15 cloud">
-                                            <i class="iconfont icon-dir"></i>
-                                        </div>
-                                        <div class="col-73 cloud">
-                                            <p>尤克里里之谈几点</p>
-                                            <p>
-                                                <span>2016-11-02</span>
-                                                <span class="right">所有者:小明</span>
-                                            </p>
-                                        </div>
-                                    </div>
+                                <div class="col-73">
+                                    <p>尤克里里之谈几点</p>
+                                    <p>
+                                        <span>2016-11-01</span>
+                                        <span class="right">分享给小明</span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- 加载提示符 -->
-                <div class="infinite-scroll-preloader">
-                    <div class="preloader"></div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row no-gutter">
+                                <label class="col-12"  for="file2">
+                                    <div class="cloudfog-checkbox">
+                                        <input class="check-input" type="checkbox" id="file2">
+                                        <i class="iconfont">&#xe64f;</i>
+                                    </div>
+                                </label>
+                                <div class="col-15">
+                                    <div class="sprite sprite-dr"></div>
+                                </div>
+                                <div class="col-73">
+                                    <p>尤克里里之谈几点</p>
+                                    <p>
+                                        <span>2016-11-02</span>
+                                        <span class="right">分享给小明</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row no-gutter">
+                                <label class="col-12"  for="file3">
+                                    <div class="cloudfog-checkbox">
+                                        <input class="check-input" type="checkbox" id="file3">
+                                        <i class="iconfont">&#xe64f;</i>
+                                    </div>
+                                </label>
+                                <div class="col-15">
+                                    <div class="sprite sprite-dr"></div>
+                                </div>
+                                <div class="col-73">
+                                    <p>尤克里里之谈几点</p>
+                                    <p>
+                                        <span>2016-11-03</span>
+                                        <span class="right">分享给小明</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row no-gutter">
+                                <label class="col-12"  for="file4">
+                                    <div class="cloudfog-checkbox">
+                                        <input class="check-input" type="checkbox" id="file4">
+                                        <i class="iconfont">&#xe64f;</i>
+                                    </div>
+                                </label>
+                                <div class="col-15">
+                                    <div class="sprite sprite-dr"></div>
+                                </div>
+                                <div class="col-73">
+                                    <p>尤克里里之谈几点</p>
+                                    <p>
+                                        <span>2016-11-04</span>
+                                        <span class="right">分享给小明</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row no-gutter">
+                                <label class="col-12"  for="file5">
+                                    <div class="cloudfog-checkbox">
+                                        <input class="check-input" type="checkbox" id="file5">
+                                        <i class="iconfont">&#xe64f;</i>
+                                    </div>
+                                </label>
+                                <div class="col-15">
+                                    <div class="sprite sprite-dr"></div>
+                                </div>
+                                <div class="col-73">
+                                    <p>尤克里里之谈几点</p>
+                                    <p>
+                                        <span>2016-11-05</span>
+                                        <span class="right">分享给小明</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row no-gutter">
+                                <label class="col-12"  for="file6">
+                                    <div class="cloudfog-checkbox">
+                                        <input class="check-input" type="checkbox" id="file6">
+                                        <i class="iconfont">&#xe64f;</i>
+                                    </div>
+                                </label>
+                                <div class="col-15">
+                                    <div class="sprite sprite-dr"></div>
+                                </div>
+                                <div class="col-73">
+                                    <p>尤克里里之谈几点</p>
+                                    <p>
+                                        <span>2016-11-06</span>
+                                        <span class="right">分享给小明</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row no-gutter">
+                                <label class="col-12"  for="file7">
+                                    <div class="cloudfog-checkbox">
+                                        <input class="check-input" type="checkbox" id="file7">
+                                        <i class="iconfont">&#xe64f;</i>
+                                    </div>
+                                </label>
+                                <div class="col-15">
+                                    <div class="sprite sprite-dr"></div>
+                                </div>
+                                <div class="col-73">
+                                    <p>尤克里里之谈几点</p>
+                                    <p>
+                                        <span>2016-11-07</span>
+                                        <span class="right">分享给小明</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row no-gutter">
+                                <label class="col-12"  for="file8">
+                                    <div class="cloudfog-checkbox">
+                                        <input class="check-input" type="checkbox" id="file8">
+                                        <i class="iconfont">&#xe64f;</i>
+                                    </div>
+                                </label>
+                                <div class="col-15">
+                                    <div class="sprite sprite-dr"></div>
+                                </div>
+                                <div class="col-73">
+                                    <p>尤克里里之谈几点</p>
+                                    <p>
+                                        <span>2016-11-08</span>
+                                        <span class="right">分享给小明</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row no-gutter">
+                                <label class="col-12"  for="file9">
+                                    <div class="cloudfog-checkbox">
+                                        <input class="check-input" type="checkbox" id="file9">
+                                        <i class="iconfont">&#xe64f;</i>
+                                    </div>
+                                </label>
+                                <div class="col-15">
+                                    <div class="sprite sprite-dr"></div>
+                                </div>
+                                <div class="col-73">
+                                    <p>尤克里里之谈几点</p>
+                                    <p>
+                                        <span>2016-11-09</span>
+                                        <span class="right">分享给小明</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row no-gutter">
+                                <label class="col-12"  for="file10">
+                                    <div class="cloudfog-checkbox">
+                                        <input class="check-input" type="checkbox" id="file10">
+                                        <i class="iconfont">&#xe64f;</i>
+                                    </div>
+                                </label>
+                                <div class="col-15">
+                                    <div class="sprite sprite-dr"></div>
+                                </div>
+                                <div class="col-73">
+                                    <p>尤克里里之谈几点</p>
+                                    <p>
+                                        <span>2016-11-10</span>
+                                        <span class="right">分享给小明</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row no-gutter">
+                                <label class="col-12"  for="file11">
+                                    <div class="cloudfog-checkbox">
+                                        <input class="check-input" type="checkbox" id="file11">
+                                        <i class="iconfont">&#xe64f;</i>
+                                    </div>
+                                </label>
+                                <div class="col-15">
+                                    <div class="sprite sprite-dr"></div>
+                                </div>
+                                <div class="col-73">
+                                    <p>尤克里里之谈几点</p>
+                                    <p>
+                                        <span>2016-11-11</span>
+                                        <span class="right">分享给小明</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -264,23 +408,23 @@
                 <span class="icon iconfont">&#xe638;</span>
                 <span class="tab-label">共享</span>
             </a>
-            <!--<a class="tab-item external" href="uplist.html">-->
-            <!--<span class="icon iconfont">&#xe654;</span>-->
-            <!--<span class="tab-label">上传列表</span>-->
-            <!--</a>-->
+            <a class="tab-item external" href="uplist.html">
+                <span class="icon iconfont">&#xe654;</span>
+                <span class="tab-label">上传列表</span>
+            </a>
             <a class="tab-item external" href="mine.html">
                 <span class="icon iconfont">&#xe63b;</span>
                 <span class="tab-label">设置</span>
             </a>
         </nav>
         <!--选中尾部工具栏-->
-        <!--<nav class="bar bar-tab checked-tab hide">-->
-        <!--<p class="cancel">-->
-        <!--<button type="reset" class="left close-checked-tab">取消</button>-->
-        <!--<span>已选定<em class="check-num">1</em>个</span>-->
-        <!--<button class="right">下载</button>-->
-        <!--</p>-->
-        <!--</nav>-->
+        <nav class="bar bar-tab checked-tab hide">
+            <p class="cancel">
+                <button type="reset" class="left close-checked-tab">取消</button>
+                <span>已选定<em class="check-num">1</em>个</span>
+                <button class="right">下载</button>
+            </p>
+        </nav>
     </div>
 </div>
 </body>

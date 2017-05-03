@@ -1,16 +1,15 @@
 //---------------------------------引入外部文件开始
 @import "variables";
 @import (inline)"../css/sprite.css";
-@import (inline)"../css/iconfont.css";
 //@import (inline)"../css/reset.css";
-//@font-face {
-//  font-family: 'iconfont';  /* project id 219299 */
-//  src: url('//at.alicdn.com/t/font_y9jgma3g59gujtt9.eot');
-//  src: url('//at.alicdn.com/t/font_y9jgma3g59gujtt9.eot?#iefix') format('embedded-opentype'),
-//  url('//at.alicdn.com/t/font_y9jgma3g59gujtt9.woff') format('woff'),
-//  url('//at.alicdn.com/t/font_y9jgma3g59gujtt9.ttf') format('truetype'),
-//  url('//at.alicdn.com/t/font_y9jgma3g59gujtt9.svg#iconfont') format('svg');
-//}
+@font-face {
+  font-family: 'iconfont';  /* project id 219299 */
+  src: url('//at.alicdn.com/t/font_1w1n1pukludz33di.eot');
+  src: url('//at.alicdn.com/t/font_1w1n1pukludz33di.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1w1n1pukludz33di.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1w1n1pukludz33di.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1w1n1pukludz33di.svg#iconfont') format('svg');
+}
 //@font-face {
 //  /* font-properties */
 //  font-family: PingFang;
@@ -342,9 +341,6 @@ header.bar-nav{
   .content-block{
     padding: 0;
     margin: 0;
-    .webuploader-element-invisible{
-      opacity: 0;
-    }
     .content-padded{
       text-align: center;
       padding: 6rem 0 0 0;
@@ -367,18 +363,22 @@ header.bar-nav{
           color: @text-black;
         }
       }
+      //第一行图标
       .row-icon-one{
-        .col-100{
-          i{
-            color: @icon-file;
-          }
+        .col-50{
+          color: @icon-green2;
+        }
+        .col-50:nth-child(1){
+          color: @icon-purple2;
         }
       }
+      //最后一行图标
       .row-icon-two{
-        .col-100{
-          i{
-            color: @icon-yellow;
-          }
+        .col-50:nth-child(1){
+          color: @icon-blue2;
+        }
+        .col-50:nth-child(2){
+          color: @icon-yellow2;
         }
       }
       .cancel{
@@ -494,57 +494,3 @@ header.bar-nav{
   }
 }
 //----------------------------------重命名蒙版结束
-//----------------------------------详细信息开始
-.popup-detail {
-  .content-block {
-    .content-padded {
-      header {
-        height: 2.2rem;
-        h1{
-          margin: 0;
-        }
-      }
-      .content {
-        top:2.2rem!important;
-        bottom: 2.5rem;
-        background-color: @text-white;
-        padding-top: 1.25rem;
-        .row{
-          font-size: 0.7rem;
-          margin: 0;
-          .col-30{
-            width: 30%;
-            color: @text-gray2;
-            text-align: right;
-            padding-right: 0.75rem;
-          }
-          .col-70{
-            width: 70%;
-            color: @text-black;
-          }
-        }
-      }
-    }
-  }
-}
-//----------------------------------详细信息结束
-//----------------------------------操作开始
-.actions-modal{
-  background-color: @bg-operation;
-  .actions-modal-group{
-    margin: 0;
-    .actions-modal-button{
-      border-radius: 0;
-      background-color: @text-white;
-      color: @text-black;
-      font-size: 0.8rem;
-    }
-  }
-  .actions-modal-group:last-child{
-    margin-top: 0.5rem;
-    .actions-modal-button{
-      color: @text-blue-cancel;
-    }
-  }
-}
-//----------------------------------操作结束

@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('../fonts/iconfont.eot?t=1492067880794'); /* IE9*/
-  src: url('../fonts/iconfont.eot?t=1492067880794#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/iconfont.woff?t=1492067880794') format('woff'), /* chrome, firefox */
-  url('../fonts/iconfont.ttf?t=1492067880794') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('../fonts/iconfont.svg?t=1492067880794#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('../fonts/iconfont.eot?t=1487586654183'); /* IE9*/
+  src: url('../fonts/iconfont.eot?t=1487586654183#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff?t=1487586654183') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf?t=1487586654183') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1487586654183#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -14,8 +14,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.icon-duigou:before { content: "\e626"; }
 
 .icon-aliyun02:before { content: "\e62f"; }
 
@@ -106,36 +104,4 @@
 .icon-cloudfog_yinle:before { content: "\e664"; }
 
 .icon-shangchuantupian:before { content: "\e665"; }
-
-.icon-tubiao-:before { content: "\e666"; }
-
-.icon-tubiao_zhankai:before { content: "\e667"; }
-
-.icon-tubiao_shouqi:before { content: "\e668"; }
-
-.icon-icon_youxiang:before { content: "\e669"; }
-
-.icon-icon_dianhua:before { content: "\e66a"; }
-
-.icon-icon_yincangmima:before { content: "\e66b"; }
-
-.icon-icon_chenggong:before { content: "\e66c"; }
-
-.icon-icon_shibai:before { content: "\e66d"; }
-
-.icon-icon_yunxiazai:before { content: "\e66e"; }
-
-.icon-icon_wenjian-gengduo:before { content: "\e66f"; }
-
-.icon-icon_xialaguanbi:before { content: "\e670"; }
-
-.icon-icon_xiala:before { content: "\e671"; }
-
-.icon-icon_bianjicaozuo:before { content: "\e672"; }
-
-.icon-dir:before { content: "\e673"; }
-
-.icon-c_exe:before { content: "\e675"; }
-
-.icon-icon-:before { content: "\e677"; }
 

@@ -1,42 +1,42 @@
 @import "variables";
-header.bar-nav {
+header.bar-nav{
   height: 4.45rem;
   //添加排序搜索
-  .opera {
+  .opera{
     width: 100%;
     height: 2.25rem;
     background-color: @bg-grey;
-    .col-15, .col-70 {
+    .col-15,.col-70{
       height: 2.25rem;
       line-height: 2.25rem;
     }
-    .col-15 {
+    .col-15{
       width: 15%;
       font-size: 1.25rem;
       overflow: visible;
-      i {
+      i{
         display: inline-block;
         margin: 0 0.15rem 0 0.8rem;
       }
     }
-    .col-15:nth-child(1) {
-      i {
+    .col-15:nth-child(1){
+      i{
         color: @text-orange;
       }
     }
-    .col-15:nth-child(2) {
-      i {
+    .col-15:nth-child(2){
+      i{
         color: @icon-gray;
       }
     }
-    .col-70 {
+    .col-70{
       padding-right: 0.5rem;
       width: 70%;
       height: 2.25rem;
-      .searchbar {
+      .searchbar{
         background-color: @bg-grey;
-        .search-input {
-          input {
+        .search-input{
+          input{
             border: none;
             height: 1.5rem;
           }
@@ -46,74 +46,74 @@ header.bar-nav {
   }
 }
 //分类蒙版
-.popup-classify {
+.popup-classify{
   width: 100%;
-  background-color: rgba(127, 127, 127, 0.6);
+  background-color: rgba(127,127,127,0.6);
   position: relative;
-  top: 2.2rem;
-  .content-block {
+  top:2.2rem;
+  .content-block{
     background-color: @text-white;
-    height: 13rem;
+    height: 8.15rem;
     margin: 0;
     padding-top: 0.35rem;
-    .content-padded {
+    .content-padded{
       text-align: center;
       margin: 0;
       //所有图标样式
-      .no-gutter.row-icon {
-        i {
+      .no-gutter.row-icon{
+        i{
           font-size: 2rem;
         }
       }
       //所有文字样式
-      .no-gutter.row-comment {
+      .no-gutter.row-comment{
         font-size: 0.7rem;
         color: @text-black;
       }
       //第一行图标
-      .row-icon-one {
+      .row-icon-one{
         height: 2.8rem;
-        .col-33 {
+        .col-33{
           height: 2.8rem;
         }
-        .col-33:nth-child(1) {
+        .col-33:nth-child(1){
           color: @icon-pink;
         }
-        .col-33:nth-child(2) {
+        .col-33:nth-child(2){
           color: @icon-green;
         }
-        .col-33:nth-child(3) {
+        .col-33:nth-child(3){
           color: @icon-yellow;
         }
       }
       //最后一行图标
-      .row-icon-two {
+      .row-icon-two{
         height: 2.5rem;
-        .col-33 {
+        .col-33{
           height: 2.5rem;
         }
-        .col-33:nth-child(1) {
+        .col-33:nth-child(1){
           color: @icon-purple;
         }
-        .col-33:nth-child(2) {
+        .col-33:nth-child(2){
           color: @icon-blue;
         }
-        .col-33:nth-child(3) {
+        .col-33:nth-child(3){
           color: @icon-lightgreen;
         }
       }
       //第一行文字
-      .row-text-one {
+      .row-text-one{
         height: 0.8rem;
-        .col-33 {
+        .col-33{
           height: 0.8rem;
           line-height: 0.8rem;
         }
       }
       //第二行文字
-      .row-text-two {
+      .row-text-two{
         height: 1.45rem;
-        .col-33 {
+        .col-33{
           height: 1.45rem;
           line-height: 1.45rem;
         }
@@ -125,151 +125,89 @@ header.bar-nav {
 .content {
   background-color: @text-white;
   top: 4.45rem !important;
-  bottom: 2.45rem;
+  bottom:2.45rem;
   //下拉菜单
-  .page-index {
-    .dr {
-      .cloudfog-checkbox {
-        //opacity: 0;
+  .page-index{
+    .dr{
+      .cloudfog-checkbox{
+        opacity: 0;
       }
     }
-    .card {
+    .card{
       margin: 0;
       border-bottom: 0.05rem solid @border-gray;
       box-shadow: none;
-      .card-content {
-        .card-content-inner {
+      .card-content{
+        .card-content-inner{
           padding: 0;
-          .row {
+          .row{
             height: 2.75rem;
-            .col-12 {
+            .col-12{
               height: 2.75rem;
               width: 12%;
-              label{
-                display: inline-block;
-                width: 100%;
-                height: 100%;
-                padding: 0.8rem 0 0 0.8rem;
-              }
-              .check-hide{
-                width: 0;
-                height: 0;
-                padding: 0;
-                .cloudfog-checkbox{
-                  width: 0;
-                  height: 0;
-                  input{
-                    width: 0;
-                    height: 0;
-                  }
-                }
-              }
-              i.open-close{
-                display: inline-block;
-                font-size: 0.7rem;
-                margin: 0.8rem 0 0 0.8rem;
-                color: @icon-close-open;
-              }
-              .cloud-download{
-                padding: 0.8rem 0 0 0.7rem;
-                i{
-                  color: @text-orange;
-                  font-size: 1rem;
-                }
-              }
-              .infinite-scroll-preloader{
-                padding-left: 0.3rem;
-                .preloader{
-                  width: 0.8rem;
-                }
+              padding-left: 0.8rem;
+              padding-top: 1rem;
+              .cloudfog-checkbox.none{
+                opacity: 0;
               }
             }
-            .col-12.open{
-              i.open-close{
-                transform:rotate(180deg);
-                -ms-transform:rotate(180deg); 	/* IE 9 */
-                -moz-transform:rotate(180deg); 	/* Firefox */
-                -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
-                -o-transform:rotate(180deg); 	/* Opera */
-              }
-            }
-            .col-15 {
+            .col-15{
               height: 2.75rem;
               width: 15%;
-              i{
-                font-size: 2rem;
+              padding-top: 0.3rem;
+              .sprite{
+                background-size: 21rem auto;  //背景图片的宽度缩减到一半，高度自适应
+                width: 2.2rem;
+                height: 2.2rem;
+              }
+              .sprite-dr {     //图片大小缩小到一半
+                background-position: 0 -46.1rem;   //背景图片的位置也相应的缩减到一半
+              }
+              .sprite-jpg {     //图片大小缩小到一半
+                background-position: -0px -89.1rem;
               }
             }
-            .col-73 {
+            .col-73{
               height: 2.75rem;
               width: 73%;
               padding: 0.5rem 0.5rem 0.5rem 0;
-              p {
+              p{
                 margin: 0;
               }
-              p:nth-child(1) {
+              p:nth-child(1){
                 line-height: 1rem;
                 font-size: 0.65rem;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
               }
-              p:nth-child(2) {
+              p:nth-child(2){
                 line-height: 0.75rem;
                 color: @text-gray;
                 font-size: 0.6rem;
               }
             }
-            .col-73.cloud,.col-15.cloud{
-              color:@text-gray;
-            }
-          }
-        }
-      }
-      .row-opera{
-        padding: 0 1.1rem;
-        background-color: @bg-row-opera;
-        height: 2.5rem;
-        .col-25{
-          text-align: center;
-          padding-top: 0.2rem;
-          i{
-            font-size: 1rem;
-            color: @icon-row-opera;
-          }
-          span{
-            display: block;
-            font-size: 0.45rem;
-            margin-top: -0.2rem;
-          }
-        }
-        .more.col-25{
-          i,span{
-            color: @text-orange;
           }
         }
       }
     }
-    .head-card {
+    .head-card{
       height: 2.25rem;
       border-bottom: 1px solid @border-gray;
-      .card-content {
+      .card-content{
         height: 2.25rem;
-        .card-content-inner {
+        .card-content-inner{
           height: 2.25rem;
           padding: 0;
-          .row {
+          .row{
             height: 2.25rem !important;
-            .col-100 {
+            .col-100{
               padding: 0.6rem 0 0 0.8rem;
-              a {
+              a{
                 color: @text-orange;
-                em {
+                em{
                   font-style: normal;
                   color: @text-gray2;
                 }
               }
-              a:last-child {
+              a:last-child{
                 color: @text-black;
               }
             }
@@ -279,16 +217,16 @@ header.bar-nav {
     }
   }
 }
-.checked-content {
-  bottom: 5rem;
+.checked-content{
+  bottom:5rem;
 }
 //分享蒙版
-.popup-share {
-  background-color: rgba(0, 0, 0, 0.5);
-  .content-block {
+.popup-share{
+  background-color: rgba(0,0,0,0.5);
+  .content-block{
     padding: 0;
     margin: 0;
-    .content-padded {
+    .content-padded{
       width: 13.5rem;
       height: 8rem;
       background-color: @text-white;
@@ -297,7 +235,7 @@ header.bar-nav {
       padding: 0;
       box-sizing: border-box;
       border-radius: 0.25rem;
-      h1 {
+      h1{
         background-color: @text-orange;
         height: 2.2rem;
         line-height: 2.2rem;
@@ -307,27 +245,27 @@ header.bar-nav {
         margin: 0;
         border-radius: 0.25rem 0.25rem 0 0;
       }
-      .row {
+      .row{
         height: 2.175rem;
         padding-top: 0.75rem;
         font-size: 0.75rem;
-        .col-20 {
+        .col-20{
           color: @text-black;
           padding-left: 1.6rem;
           padding-top: 0.15rem;
         }
-        .col-80 {
+        .col-80{
           color: @text-black;
           text-align: left;
-          a {
+          a{
             color: @text-black;
           }
         }
       }
-      .row:last-child {
+      .row:last-child{
         padding-top: 0.625rem;
       }
-      button {
+      button{
         width: 50%;
         height: 2.2rem;
         background-color: @text-white;
@@ -336,7 +274,7 @@ header.bar-nav {
         color: @text-blue;
         border-radius: 0 0 0.25rem 0;
       }
-      .cancel {
+      .cancel{
         border: none;
         border-top: 1px solid @border-input;
         border-right: 1px solid @border-input;
@@ -346,88 +284,88 @@ header.bar-nav {
   }
 }
 //分享给个人
-.popup-to-oneself {
+.popup-to-oneself{
   background-color: @text-white;
   width: 100%;
   height: 100%;
-  .content-block {
+  .content-block{
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
-    .content-padded {
+    .content-padded{
       padding: 0;
       margin: 0;
-      header {
+      header{
         height: 4.4rem;
-        h1 {
+        h1{
           margin: 0;
         }
-        .search-bar {
+        .search-bar{
           height: 2.2rem;
           margin-top: 2.2rem;
           background-color: @bg-grey;
-          .search-bar-input {
+          .search-bar-input{
             margin: 0;
             position: relative;
             width: 100%;
             padding-left: 1.1rem;
             padding-right: 0.5rem;
-            .icon {
+            .icon{
               left: 1.2rem;
               position: absolute;
             }
-            input[type=search] {
+            input[type=search]{
               width: 100%;
               border-radius: 4px;
               z-index: 20000;
-              text-indent: 1.5rem;
+              text-indent:1.5rem;
             }
-            .iconfont {
+            .iconfont{
               position: absolute;
               font-size: 0.8rem;
               right: 0.8rem;
-              top: 0.4rem;
+              top:0.4rem;
               color: @text-gray;
               display: none;
             }
           }
         }
       }
-      .content.self-content {
-        bottom: 2.2rem;
-        top: 4.4rem;
-        .list-block {
+      .content.self-content{
+        bottom:2.2rem;
+        top:4.4rem;
+        .list-block{
           margin: 0;
           position: static;
-          ul:before {
+          ul:before{
             height: 0;
           }
-          ul {
-            li.item-content {
-              border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-              .item-inner {
+          ul{
+            li.item-content{
+              border-bottom: 1px solid rgba(0,0,0,0.05);
+              .item-inner{
                 position: static;
                 margin-left: 0.6rem;
-                .item-title {
+                .item-title{
                 }
-                .item-after {
+                .item-after{
                   font-size: 0.9rem;
                   color: @border-input;
                 }
               }
             }
-            ul {
+            ul{
               padding-left: 0;
-              li {
+              li{
                 padding: 0;
-                .item-media {
+                .item-media{
                   padding-left: 2.3rem;
                 }
               }
-              ul {
+              ul{
                 padding: 0;
-                .item-media {
+                .item-media{
                   padding-left: 3.5rem;
                 }
               }
@@ -435,11 +373,11 @@ header.bar-nav {
           }
         }
       }
-      .checked-tab {
+      .checked-tab{
         display: block;
         height: 2.2rem;
         padding-top: 0.16rem;
-        p.cancel {
+        p.cancel{
           border-top: none;
         }
       }
@@ -447,12 +385,12 @@ header.bar-nav {
   }
 }
 //删除蒙版
-.popup-delete {
-  background-color: rgba(0, 0, 0, 0.5);
-  .content-block {
+.popup-delete{
+  background-color: rgba(0,0,0,0.5);
+  .content-block{
     padding: 0;
     margin: 0;
-    .content-padded {
+    .content-padded{
       width: 13.5rem;
       height: 8rem;
       background-color: @text-white;
@@ -461,7 +399,7 @@ header.bar-nav {
       padding: 0;
       box-sizing: border-box;
       border-radius: 0.25rem;
-      h1 {
+      h1{
         background-color: @text-orange;
         height: 2.2rem;
         line-height: 2.2rem;
@@ -471,13 +409,13 @@ header.bar-nav {
         margin: 0;
         border-radius: 0.25rem 0.25rem 0 0;
       }
-      p {
+      p{
         //height: 3.6rem;
         color: @text-black;
         font-size: 0.8rem;
         line-height: 2.7rem;
       }
-      button {
+      button{
         width: 50%;
         height: 2.2rem;
         background-color: @text-white;
@@ -486,7 +424,7 @@ header.bar-nav {
         color: @text-blue;
         border-radius: 0 0 0.25rem 0;
       }
-      .cancel {
+      .cancel{
         border: none;
         border-top: 1px solid @border-input;
         border-right: 1px solid @border-input;
@@ -496,13 +434,12 @@ header.bar-nav {
   }
 }
 //新建文件夹
-.popup-create-new-file {
-  z-index: 100000;
-  background-color: rgba(0, 0, 0, 0.5);
-  .content-block {
+.popup-create-new-file{
+  background-color: rgba(0,0,0,0.5);
+  .content-block{
     padding: 0;
     margin: 0;
-    .content-padded {
+    .content-padded{
       width: 13.5rem;
       height: 8rem;
       background-color: @text-white;
@@ -511,7 +448,8 @@ header.bar-nav {
       padding: 0;
       box-sizing: border-box;
       border-radius: 0.25rem;
-      h1 {
+      h1{
+        //background-color: @text-orange;
         height: 2.3rem;
         line-height: 2.3rem;
         font-size: 0.9rem;
@@ -520,14 +458,14 @@ header.bar-nav {
         margin: 0;
         border-radius: 0.25rem 0.25rem 0 0;
       }
-      .rename-input {
+      .rename-input{
         height: 3.45rem;
         color: @text-black;
         font-size: 0.8rem;
         margin-top: 0.8rem;
         padding: 0 0.5rem;
         position: relative;
-        input {
+        input{
           width: 100%;
           height: 1.75rem;
           background-color: @bg-gray;
@@ -536,15 +474,15 @@ header.bar-nav {
           padding-left: 0.4rem;
           border-radius: 3px;
         }
-        i {
+        i{
           position: absolute;
-          right: 0.9rem;
-          top: 0.46rem;
+          right:0.9rem;
+          top:0.46rem;
           font-size: 0.7rem;
           color: @text-gray;
         }
       }
-      button {
+      button{
         width: 50%;
         height: 2.2rem;
         background-color: @text-white;
@@ -553,7 +491,7 @@ header.bar-nav {
         color: @text-blue;
         border-radius: 0 0 0.25rem 0;
       }
-      .cancel {
+      .cancel{
         border: none;
         border-top: 1px solid @border-input;
         border-right: 1px solid @border-input;
@@ -562,55 +500,55 @@ header.bar-nav {
     }
   }
 }
-//分享给公共资源
-.popup-to-common {
+//移动蒙版
+.popup-remove,.popup-to-common{
   background-color: @text-white;
   width: 100%;
   height: 100%;
-  .content-block {
+  .content-block{
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
-    .content-padded {
+    .content-padded{
       padding: 0;
       margin: 0;
-      header {
-        height: 2.2rem;
-        h1 {
+      header{
+        height: 6.2rem;
+        h1{
           margin: 0;
         }
-        .row {
+        .search-bar{
           height: 4rem;
           margin-top: 2.2rem;
           background-color: @text-white;
-          .search-bar-input {
+          .search-bar-input{
             margin: 0;
             position: relative;
             width: 100%;
             padding-left: 1.1rem;
             padding-right: 0.5rem;
-            .icon {
+            .icon{
               left: 1.2rem;
               position: absolute;
             }
-            input[type=search] {
+            input[type=search]{
               width: 100%;
               border-radius: 4px;
               z-index: 20000;
-              text-indent: 1.5rem;
+              text-indent:1.5rem;
               border: 1px solid @border-input3;
             }
-            .iconfont {
+            .iconfont{
               position: absolute;
               font-size: 0.8rem;
               right: 0.8rem;
-              top: 0.4rem;
+              top:0.4rem;
               color: @text-gray;
               display: none;
             }
           }
-          p.note {
+          p.note{
             color: @text-note;
             font-size: 0.55rem;
             margin: 0;
@@ -620,50 +558,50 @@ header.bar-nav {
           }
         }
       }
-      .content.self-content {
-        bottom: 2.5rem;
-        top: 6.2rem;
+      .content.self-content{
+        bottom:2.5rem;
+        top:6.2rem !important;
         background-color: @bg-content;
-        .list-block {
+        .list-block{
           margin: 0;
           position: static;
           margin-top: 0.5rem;
-          ul:before {
+          ul:before{
             height: 0;
           }
-          ul {
+          ul{
             position: static;
-            li.item-content {
+            li.item-content{
               position: static;
-              border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-              .item-media {
-                .cloudfog-radio {
-                  i {
+              border-bottom: 1px solid rgba(0,0,0,0.05);
+              .item-media{
+                .cloudfog-radio{
+                  i{
                     background-color: @text-orange;
                   }
                 }
               }
-              .item-inner {
+              .item-inner{
                 position: static;
                 margin-left: 0.6rem;
-                .item-after {
+                .item-after{
                   font-size: 0.9rem;
                   color: @border-input;
                 }
               }
             }
-            ul {
+            ul{
               padding-left: 0;
-              li {
+              li{
                 padding: 0;
-                position: static !important;
-                .item-media {
+                position: static!important;
+                .item-media{
                   padding-left: 2.3rem;
                 }
               }
-              ul {
+              ul{
                 padding: 0;
-                .item-media {
+                .item-media{
                   padding-left: 3.5rem;
                 }
               }
@@ -671,15 +609,15 @@ header.bar-nav {
           }
         }
       }
-      .bar-tab {
+      .bar-tab{
         display: block;
         height: 2.5rem;
         background-color: @bg-content;
         padding: 0 0.75rem;
-        p {
+        p{
           margin: 0;
           box-sizing: border-box;
-          a.button {
+          a.button{
             display: block;
             height: 2.5rem;
             line-height: 2.5rem;
@@ -687,7 +625,7 @@ header.bar-nav {
             padding: 0;
             box-sizing: border-box;
             background-color: @text-orange;
-            top: 0;
+            top:0;
             border: none;
             font-size: 1rem;
           }
@@ -696,365 +634,25 @@ header.bar-nav {
     }
   }
 }
-.popup-to-common {
-  .content-block {
-    .content-padded {
-      header {
+.popup-to-common{
+  .content-block{
+    .content-padded{
+      header{
         height: 2.2rem !important;
       }
-      .content.self-content {
+      .content.self-content{
         top: 2.2rem !important;
-        .list-block {
-          ul {
-            li {
-              .item-after {
-                i {
+        .list-block{
+          ul{
+            li{
+              .item-after{
+                i{
                   font-size: 1rem;
                   color: @icon-choose;
                 }
               }
-              .hide {
+              .hide{
                 display: none;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-//移动蒙版
-.popup-remove {
-  position: absolute;
-  .content-block {
-    .content-padded {
-      header {
-        height: 2.2rem;
-      }
-      .content {
-        top:2.2rem!important;
-        bottom: 2.5rem;
-        background-color: @text-white;
-        .buttons-tab{
-          height: 1.5rem;
-          line-height: 1.5rem;
-          text-align: left;
-          padding-left: 0.5rem;
-          font-size: 0.55rem;
-          background-color: @bg-grey;
-        }
-        .content-block {
-          margin: 0;
-          padding: 0;
-          ul{
-            li{
-              .row{
-                margin: 0;
-                border-bottom: 1px solid @border-gray;
-                .col-12{
-                  width: 12%;
-                  height: 100%;
-                  i{
-                    float: left;
-                    font-size: 0.75rem;
-                    margin: 0.6rem 0 0 0.75rem;
-                  }
-                  .no-child{
-                    opacity: 0;
-                  }
-                  div.sprite{
-                    float: left;
-                    background-size: 21rem auto; //背景图片的宽度缩减到一半，高度自适应
-                    width: 2.2rem;
-                    height: 2.2rem;
-                    background-position: 0 -46.1rem; //背景图片的位置也相应的缩减到一半
-                  }
-                }
-                .col-76{
-                  width: 76%;
-                  height: 100%;
-                  padding-left: 0.5rem;
-                  .dr-name{
-                    float: left;
-                    font-size: 0.7rem;
-                    line-height: 2.25rem;
-                  }
-                }
-              }
-            }
-            li.active{
-              background-color: @bg-remove;
-              ul{
-                background-color: @text-white;
-              }
-            }
-            ul{
-              li{
-                .row{
-                  padding-left: 1.5rem;
-                }
-              }
-              ul{
-                li{
-                  .row{
-                    padding-left: 3rem;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      .bar-tab{
-        padding: 0 0.9rem;
-        background-color: @bg-tab-bottom;
-        a{
-          width: 48%;
-          height: 1.6rem;
-          line-height: 1.6rem;
-          color: @text-white;
-          border: none;
-        }
-        .button-warning{
-          background-color: @text-gray3;
-        }
-        .button-light{
-          background-color: @bg-blue;
-        }
-      }
-    }
-  }
-}
-//操作
-.actions-modal{
-  margin: 0;
-  background-color: @bg-operation;
-  .actions-modal-group{
-    margin: 0;
-    border: none;
-    .actions-modal-button{
-      border-radius: 0;
-      background-color:@text-white;
-      color: @text-black;
-      font-size: 0.85rem;
-    }
-    .bg-danger{
-      color: @text-blue-cancel;
-    }
-  }
-  .actions-modal-group:last-child{
-    margin-top: 0.5rem;
-
-  }
-}
-//.modal{
-//  height: 6.5rem;
-//  font-size: 0.75rem;
-//  background-color: @text-white;
-//  .modal-inner{
-//    height: 4.2rem;
-//    background-color: @text-white;
-//    padding: 0.7rem 1.5rem 0;
-//    line-height: 1.4rem;
-//  }
-//  .modal-buttons{
-//    height: 2.3rem;
-//    .modal-button{
-//      height: 2.3rem;
-//      background-color: @text-white!important;
-//      border-right: 1px solid @border-radio;
-//    }
-//    .modal-button:after{
-//      display: none;
-//    }
-//  }
-//}
-//上传列表蒙版
-.popup-up-list{
-  .content-block{
-    margin: 0;
-    overflow: hidden;
-    .content {
-      top: 0!important;
-      bottom: 0rem!important;
-      background-color: @text-white;
-      .buttons-tab {
-        text-align: left;
-        border-bottom: 1px solid @border-gray;
-        h1 {
-          width: 100%;
-          height: 2.2rem;
-          font-size: 0.75rem;
-          margin: 0;
-          line-height: 2.2rem;
-          padding-left: 0.75rem;
-          padding-right: 0.65rem;
-          span{
-            font-size: 0.6rem;
-            color: @text-gray3;
-          }
-          a{
-            width: 4rem;
-            height: 1.25rem;
-            line-height: 1.25rem;
-            padding: 0;
-            border-radius: 4px;
-            font-size: 0.55rem;
-            letter-spacing: 0.1rem;
-            margin-top: 0.5rem;
-            border: 1px solid @border-button-cancel;
-            color: @text-gray3;
-          }
-        }
-      }
-      .content-block {
-        margin: 0;
-        padding: 0;
-        .list-block {
-          margin-top: 0.5rem;
-        }
-        #UplodQueue {
-          .list-block {
-            margin: 0;
-            .card {
-              margin: 0;
-              border-bottom: 1px solid @border-gray;
-              box-shadow: none;
-              .card-content {
-                .card-content-inner {
-                  padding: 0;
-                  .row {
-                    height: 3.25rem;
-                    .col-23 {
-                      height: 3.25rem;
-                      width: 23%;
-                      padding-top: 0.8rem;
-                      padding-left: 1.25rem;
-                      .sprite {
-                        background-size: 7rem auto; //背景图片的宽度缩减到一半，高度自适应
-                      }
-                      .sprite-dr { //图片大小缩小到一半
-                        width: 2.2rem;
-                        height: 2.2rem;
-                        background-position: 0 823.1rem; //背景图片的位置也相应的缩减到一半
-                      }
-                    }
-                    .col-77 {
-                      height: 3.25rem;
-                      width: 77%;
-                      p {
-                        margin: 0;
-                      }
-                      p:nth-child(1) {
-                        font-size: 0.65rem;
-                        line-height: 1.2rem;
-                        padding-top: 0.2rem;
-                      }
-                      .p-progress {
-                        height: 0.7rem;
-                        font-size: 0.6rem;
-                        padding-right: 0.75rem;
-                        position: relative;
-                        i{
-                          font-size: 0.5rem;
-                          margin-left: 0.2rem;
-                        }
-                        i.success{
-                          color: @icon-green;
-                        }
-                        i.del{
-                          color: @icon-del;
-                        }
-                        i.fail{
-                          color: @icon-fail;
-                        }
-                        progress {
-                          width: 68%;
-                          height: 0.35rem;
-                          display: inline-block;
-                          -webkit-appearance: none;
-                          float: left;
-                          margin-top: 0.3rem;
-                        }
-                        span.note-progress {
-                          position: absolute;
-                          left: 22%;
-                          top: 4px;
-                          z-index: 10;
-                          font-size: 8px;
-                          color: @text-white;
-                        }
-                        .status{
-                          width: 30%;
-                          height: 0.35rem;
-                          display: inline-block;
-                          float: left;
-                          i,span{
-                            float: left;
-                          }
-                          span{
-                            margin-left: 0.2rem;
-                          }
-                        }
-                        ::-webkit-progress-inner-element {
-                          background: @progress-blank;
-                        }
-                        ::-webkit-progress-bar {
-                          background: @progress-blank;
-                        }
-                        ::-webkit-progress-value {
-                          background: @text-a;
-                        }
-                        ::-moz-progress-bar {
-                          background: @progress-blank;
-                        }
-                        ::-ms-fill {
-                          background: @progress-blank;
-                        }
-                      }
-                      .data-info {
-                        height: 1rem;
-                        padding-top: 0.25rem;
-                        font-size: 0.5rem;
-                        span {
-                          display: inline-block;
-                          width: 60%;
-                          color: @text-info;
-                          em {
-                            font-style: normal;
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-                .add-card {
-                  .row {
-                    .col-77 {
-                      border-top: 1px solid @border-gray;
-                      .p-progress {
-                        ::-webkit-progress-inner-element {
-                          background: @progress-blank;
-                        }
-                        ::-webkit-progress-bar {
-                          background: @progress-blank;
-                        }
-                        ::-webkit-progress-value {
-                          background: @text-orange;
-                        }
-                        ::-moz-progress-bar {
-                          background: @progress-blank;
-                        }
-                        ::-ms-fill {
-                          background: @progress-blank;
-                        }
-                      }
-                      span {
-                        text-align: right;
-                      }
-                    }
-                  }
-                }
               }
             }
           }

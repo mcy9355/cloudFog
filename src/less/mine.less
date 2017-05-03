@@ -45,6 +45,82 @@ header.bar-nav {
     }
   }
 }
+//分类蒙版
+.popup-classify {
+  width: 100%;
+  background-color: rgba(127, 127, 127, 0.6);
+  position: relative;
+  top: 2.2rem;
+  .content-block {
+    background-color: @text-white;
+    height: 8.15rem;
+    margin: 0;
+    padding-top: 0.35rem;
+    .content-padded {
+      text-align: center;
+      margin: 0;
+      //所有图标样式
+      .no-gutter.row-icon {
+        i {
+          font-size: 2rem;
+        }
+      }
+      //所有文字样式
+      .no-gutter.row-comment {
+        font-size: 0.7rem;
+        color: @text-black;
+      }
+      //第一行图标
+      .row-icon-one {
+        height: 2.8rem;
+        .col-33 {
+          height: 2.8rem;
+        }
+        .col-33:nth-child(1) {
+          color: @icon-pink;
+        }
+        .col-33:nth-child(2) {
+          color: @icon-green;
+        }
+        .col-33:nth-child(3) {
+          color: @icon-yellow;
+        }
+      }
+      //最后一行图标
+      .row-icon-two {
+        height: 2.5rem;
+        .col-33 {
+          height: 2.5rem;
+        }
+        .col-33:nth-child(1) {
+          color: @icon-purple;
+        }
+        .col-33:nth-child(2) {
+          color: @icon-blue;
+        }
+        .col-33:nth-child(3) {
+          color: @icon-lightgreen;
+        }
+      }
+      //第一行文字
+      .row-text-one {
+        height: 0.8rem;
+        .col-33 {
+          height: 0.8rem;
+          line-height: 0.8rem;
+        }
+      }
+      //第二行文字
+      .row-text-two {
+        height: 1.45rem;
+        .col-33 {
+          height: 1.45rem;
+          line-height: 1.45rem;
+        }
+      }
+    }
+  }
+}
 //内容区
 .content {
   top: 2.2rem !important;
@@ -80,6 +156,7 @@ header.bar-nav {
                   margin-left: 0.5rem;
                   font-size: 1.1rem;
                   color: @icon-user;
+
                 }
               }
               .title-width{
@@ -122,76 +199,5 @@ header.bar-nav {
   .content-block{
     width: 100%;
     height: 100%;
-  }
-}
-.popup-editProfile,.popup-editUser{
-  .content-block{
-    margin: 0;
-    padding: 0;
-    header{
-      .icon-left{
-        color: @text-white;
-      }
-      h1{
-        margin: 0;
-      }
-    }
-    #editUser,#editProfile{
-      bottom: 0;
-      form{
-        ul{
-          background-color: @text-white;
-          margin-top: 0.75rem;
-          li{
-            border-bottom: 1px solid @border-input2;
-            height: 2.25rem;
-            padding-left: 1.1rem;
-            overflow: hidden;
-            position: relative;
-            i{
-              font-size: 1rem;
-              color: @icon-user;
-              line-height: 2.25rem;
-              position: absolute;
-              left: 0.5rem;
-            }
-            input{
-              height: 100%;
-              width: 100%;
-              font-size: 0.75rem;
-              text-indent: 0.5rem;
-            }
-            .note{
-              width: 50%;
-              height: 2.25rem;
-              line-height: 2.25rem;
-              position: absolute;
-              right: 0;
-              top:0;
-              font-size: 0.6rem;
-              text-align: right;
-              padding-right: 0.5rem;
-              color: @text-red;
-            }
-          }
-        }
-        .sub{
-          padding: 0 0.5rem;
-          margin-top: 1.5rem;
-          input{
-            width: 100%;
-            height: 2.25rem;
-            background-color: @text-orange;
-            color: @text-white;
-            border: none;
-            line-height: 2.25rem;
-            font-size: 0.75rem;
-            border-radius: 4px;
-          }
-
-        }
-
-      }
-    }
   }
 }

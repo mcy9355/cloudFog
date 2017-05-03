@@ -1,34 +1,42 @@
 @import "variables";
-
-header.bar-nav {
+header.bar-nav{
   height: 4.45rem;
   //添加排序搜索
-  .opera {
+  .opera{
     width: 100%;
     height: 2.25rem;
     background-color: @bg-grey;
-    .col-15, .col-70 {
+    .col-15,.col-70{
       height: 2.25rem;
       line-height: 2.25rem;
     }
-    .col-20 {
+    .col-15{
+      width: 15%;
       font-size: 1.25rem;
       overflow: visible;
-      padding: 0.2rem 0 0 0.8rem;
-      i {
+      i{
         display: inline-block;
+        margin: 0 0.15rem 0 0.8rem;
+      }
+    }
+    .col-15:nth-child(1){
+      i{
+        color: @text-orange;
+      }
+    }
+    .col-15:nth-child(2){
+      i{
         color: @icon-gray;
       }
     }
-    .col-80 {
+    .col-70{
       padding-right: 0.5rem;
-      //width: 70%;
+      width: 70%;
       height: 2.25rem;
-      .searchbar {
+      .searchbar{
         background-color: @bg-grey;
-        padding-left: 0;
-        .search-input {
-          input {
+        .search-input{
+          input{
             border: none;
             height: 1.5rem;
           }
@@ -37,139 +45,114 @@ header.bar-nav {
     }
   }
 }
-
-.popup-rank {
-  .content-block {
-    left: 0.2rem;
-  }
-}
-
-.popup-share-menu {
-  .content-block {
+.popup-share-menu{
+  .content-block{
     height: 6rem;
     width: 6rem;
-    top: 1.6rem;
+    top:1.6rem;
     left: auto;
     right: 0.2rem;
-    .content-padded {
-      ul {
-        li {
+    .content-padded{
+      ul{
+        li{
           height: 50%;
         }
-        li.active {
+        li.active{
           color: @text-orange;
         }
       }
     }
-    .content-padded:before {
+    .content-padded:before{
       right: 0.6rem;
       left: auto;
     }
   }
 }
-
 //内容区
 .content {
   background-color: @text-white;
   top: 4.45rem !important;
-  bottom: 2.45rem;
+  bottom:2.45rem;
   //下拉菜单
-  .page-index {
-    .dr {
-      .cloudfog-checkbox {
-        //opacity: 0;
-      }
-    }
-    .card {
+  .page-index{
+    .card{
       margin: 0;
       border-bottom: 0.05rem solid @border-gray;
       box-shadow: none;
-      .card-content {
-        .card-content-inner {
+      .card-content{
+        .card-content-inner{
           padding: 0;
-          .row {
+          .row{
             height: 2.75rem;
-            .col-12 {
+            .col-12{
               height: 2.75rem;
               width: 12%;
-              padding: 0.8rem 0 0 0.8rem;
-              i.edit{
-                display: inline-block;
-                font-size: 0.7rem;
-                color: @text-gray2;
-              }
-              i.edit.active{
-                color: @text-orange;
-              }
-              .cloudfog-radio{
-                .green-dot{
-                  background-color: @text-orange;
-                }
-              }
+              padding-left: 0.8rem;
+              padding-top: 1rem;
             }
-            .col-15 {
+            .col-15{
               height: 2.75rem;
               width: 15%;
               padding-top: 0.3rem;
-              .sprite {
-                background-size: 7rem auto; //背景图片的宽度缩减到一半，高度自适应
+              .sprite{
+                background-size: 21rem auto;  //背景图片的宽度缩减到一半，高度自适应
+              }
+              .sprite-dr {     //图片大小缩小到一半
                 width: 2.2rem;
                 height: 2.2rem;
-              }
-              .sprite-dr { //图片大小缩小到一半
-                background-position: 0 823.1rem; //背景图片的位置也相应的缩减到一半
-              }
-              .sprite-jpg { //图片大小缩小到一半
-                background-position: -0px 396.3rem;
+                background-position: 0 -59rem;   //背景图片的位置也相应的缩减到一半
               }
             }
-            .col-73 {
+            .col-73{
               height: 2.75rem;
               width: 73%;
               padding: 0.5rem 0.5rem 0.5rem 0;
-              p {
+              p{
                 margin: 0;
               }
-              p:nth-child(1) {
+              p:nth-child(1){
                 line-height: 1rem;
                 font-size: 0.65rem;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
               }
-              p:nth-child(2) {
+              p:nth-child(2){
                 line-height: 0.75rem;
                 color: @text-gray;
                 font-size: 0.6rem;
               }
             }
           }
+
         }
       }
     }
-    .head-card {
+    .head-card{
       height: 2.25rem;
-      border-bottom: 1px solid @border-gray;
-      .card-content {
-        height: 2.25rem;
-        .card-content-inner {
-          height: 2.25rem;
-          padding: 0;
+      .card-content{
+        .card-content-inner{
           .row{
+            height: 2.25rem !important;
+            //padding-top: 0.75rem;
             .col-12{
               height: 2.25rem;
+              padding-top: 0.75rem;
+
             }
             .col-88{
-              height: 2.25rem;
-              line-height: 2.25rem;
-            }
-            .col-100{
-              padding: 0.6rem 0 0 0.8rem;
+              padding-top: 0.64rem;
             }
           }
         }
       }
+
     }
+  }
+}
+//选中尾部工具栏
+.checked-tab{
+  height: 2.45rem;
+  padding-top: 0.3rem;
+  .cancel{
+    border-top: none;
   }
 }
 

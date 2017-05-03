@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>首页</title>
     <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
@@ -57,21 +56,15 @@
                             <i class="iconfont">&#xe662;</i>
                         </div>
                         <div class="col-33">
-                            <i class="iconfont">&#xe65e;</i>
+                            <i class="iconfont">&#xe664;</i>
                         </div>
                     </div>
                     <div class="row no-gutter row-comment row-text-one">
                         <div class="col-33">全部</div>
                         <div class="col-33">图片</div>
-                        <div class="col-33">设计文件</div>
+                        <div class="col-33">音乐</div>
                     </div>
                     <div class="row no-gutter row-icon row-icon-two">
-                        <div class="col-33">
-                            <i class="iconfont">&#xe65d;</i>
-                        </div>
-                        <div class="col-33">
-                            <i class="iconfont">&#xe664;</i>
-                        </div>
                         <div class="col-33">
                             <i class="iconfont">&#xe663;</i>
                         </div>
@@ -83,21 +76,7 @@
                         </div>
                     </div>
                     <div class="row no-gutter row-comment row-text-two">
-                        <div class="col-33">源代码备份</div>
-                        <div class="col-33">音乐</div>
                         <div class="col-33">视频</div>
-                        <div class="col-33">文档</div>
-                        <div class="col-33">其他</div>
-                    </div>
-                    <div class="row no-gutter row-icon row-icon-two">
-                        <div class="col-33">
-                            <i class="iconfont">&#xe661;</i>
-                        </div>
-                        <div class="col-33">
-                            <i class="iconfont">&#xe660;</i>
-                        </div>
-                    </div>
-                    <div class="row no-gutter row-comment row-text-two">
                         <div class="col-33">文档</div>
                         <div class="col-33">其他</div>
                     </div>
@@ -120,24 +99,35 @@
         <div class="popup popup-add">
             <div class="content-block">
                 <div class="content-padded grid-demo">
-                    <div class="row no-gutter row-icon row-icon-one open-popup" data-popup=".popup-up-list"
-                         id="imgUpLoader">
-                        <div class="col-100">
+                    <div class="row no-gutter row-icon row-icon-one">
+                        <div class="col-50">
                             <i class="iconfont">&#xe665;</i>
                         </div>
+                        <div class="col-50">
+                            <i class="iconfont">&#xe646;</i>
+                        </div>
                     </div>
-                    <div class="row no-gutter row-comment row-comment-one open-popup" data-popup=".popup-up-list">
-                        <div class="col-100">
+                    <div class="row no-gutter row-comment row-comment-one">
+                        <div class="col-50">
                             <p>上传图片</p>
+                        </div>
+                        <div class="col-50">
+                            <p>上传视频</p>
                         </div>
                     </div>
                     <div class="row no-gutter row-icon row-icon-two">
-                        <div class="col-100 open-popup" data-popup=".popup-create-new-file">
+                        <div class="col-50">
+                            <i class="iconfont">&#xe648;</i>
+                        </div>
+                        <div class="col-50 open-popup" data-popup=".popup-create-new-file">
                             <i class="iconfont">&#xe647;</i>
                         </div>
                     </div>
                     <div class="row no-gutter row-comment row-comment-two">
-                        <div class="col-100 open-popup" data-popup=".popup-create-new-file">
+                        <div class="col-50">
+                            <p >新建笔记</p>
+                        </div>
+                        <div class="col-50 open-popup" data-popup=".popup-create-new-file">
                             <p>新建文件夹</p>
                         </div>
                     </div>
@@ -154,7 +144,7 @@
                         <input type="text" placeholder="请输入文件夹名称">
                         <i class="iconfont">&#xe651;</i>
                     </div>
-                    <button type="reset" class="left cancel close-popup" data-popup=".popup-create-new-file">取消</button>
+                    <button type="reset" class="left cancel close-popup">取消</button>
                     <button class="right">确定</button>
                 </div>
             </div>
@@ -176,7 +166,7 @@
             </div>
         </div>
         <!--内容区-->
-        <div class="content infinite-scroll infinite-scroll-bottom" data-distance="100">
+        <div class="content">
             <!--下拉菜单-->
             <!--主页面内容-->
             <div class="page-index">
@@ -204,14 +194,17 @@
                         <div class="card-content">
                             <div class="card-content-inner">
                                 <div class="row no-gutter">
-                                    <div class="col-12">
-                                        <i class="iconfont open-close">&#xe63e;</i>
-                                    </div>
+                                    <label class="col-12"  for="file1">
+                                        <div class="cloudfog-checkbox">
+                                            <input class="check-input" id="file1" type="checkbox">
+                                            <i class="iconfont">&#xe64f;</i>
+                                        </div>
+                                    </label>
                                     <div class="col-15">
-                                        <i class="iconfont icon-dir"></i>
+                                        <div class="sprite sprite-dr"></div>
                                     </div>
                                     <div class="col-73">
-                                        <p class="original-name">尤克里里之谈几点尤克里里之谈几点尤克里里之谈几点</p>
+                                        <p class="original-name">1尤克里里之谈几点</p>
                                         <p>
                                             <span class="date-rank">2016-11-11</span>
                                             <span class="right">344.25k</span>
@@ -220,34 +213,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row row-opera hide">
-                            <div class="col-25 share">
-                                <i class="iconfont open-popup" data-popup=".popup-share">&#xe64c;</i>
-                                <span>分享</span>
-                            </div>
-                            <div class="col-25 delete">
-                                <i class="iconfont">&#xe64b;</i>
-                                <span>删除</span>
-                            </div>
-                            <div class="col-25 rename open-popup" data-popup=".popup-rename">
-                                <i class="iconfont">&#xe64e;</i>
-                                <span>重命名</span>
-                            </div>
-                            <div class="col-25 more">
-                                <i class="iconfont">&#xe66f;</i>
-                                <span>更多</span>
-                            </div>
-                        </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
                             <div class="card-content-inner">
                                 <div class="row no-gutter">
-                                    <div class="col-12">
-                                        <i class="iconfont open-close">&#xe63e;</i>
-                                    </div>
+                                    <label class="col-12"  for="file2">
+                                        <div class="cloudfog-checkbox">
+                                            <input class="check-input" id="file2" type="checkbox">
+                                            <i class="iconfont">&#xe64f;</i>
+                                        </div>
+                                    </label>
                                     <div class="col-15">
-                                        <i class="iconfont icon-dir"></i>
+                                        <div class="sprite sprite-dr"></div>
                                     </div>
                                     <div class="col-73">
                                         <p class="original-name">2尤克里里之谈几点</p>
@@ -259,34 +237,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row row-opera hide">
-                            <div class="col-25 share">
-                                <i class="iconfont open-popup" data-popup=".popup-share">&#xe64c;</i>
-                                <span>分享</span>
-                            </div>
-                            <div class="col-25 delete">
-                                <i class="iconfont">&#xe64b;</i>
-                                <span>删除</span>
-                            </div>
-                            <div class="col-25 rename open-popup" data-popup=".popup-rename">
-                                <i class="iconfont">&#xe64e;</i>
-                                <span>重命名</span>
-                            </div>
-                            <div class="col-25 more">
-                                <i class="iconfont">&#xe66f;</i>
-                                <span>更多</span>
-                            </div>
-                        </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
                             <div class="card-content-inner">
                                 <div class="row no-gutter">
-                                    <div class="col-12">
-                                        <i class="iconfont open-close">&#xe63e;</i>
-                                    </div>
+                                    <label class="col-12"  for="file3">
+                                        <div class="cloudfog-checkbox">
+                                            <input class="check-input" id="file3" type="checkbox">
+                                            <i class="iconfont">&#xe64f;</i>
+                                        </div>
+                                    </label>
                                     <div class="col-15">
-                                        <i class="iconfont icon-dir"></i>
+                                        <div class="sprite sprite-dr"></div>
                                     </div>
                                     <div class="col-73">
                                         <p class="original-name">3尤克里里之谈几点</p>
@@ -298,34 +261,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row row-opera hide">
-                            <div class="col-25 share">
-                                <i class="iconfont open-popup" data-popup=".popup-share">&#xe64c;</i>
-                                <span>分享</span>
-                            </div>
-                            <div class="col-25 delete">
-                                <i class="iconfont">&#xe64b;</i>
-                                <span>删除</span>
-                            </div>
-                            <div class="col-25 rename open-popup" data-popup=".popup-rename">
-                                <i class="iconfont">&#xe64e;</i>
-                                <span>重命名</span>
-                            </div>
-                            <div class="col-25 more">
-                                <i class="iconfont">&#xe66f;</i>
-                                <span>更多</span>
-                            </div>
-                        </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
                             <div class="card-content-inner">
                                 <div class="row no-gutter">
-                                    <div class="col-12">
-                                        <i class="iconfont open-close">&#xe63e;</i>
-                                    </div>
+                                    <label class="col-12"  for="file4">
+                                        <div class="cloudfog-checkbox">
+                                            <input class="check-input" id="file4" type="checkbox">
+                                            <i class="iconfont">&#xe64f;</i>
+                                        </div>
+                                    </label>
                                     <div class="col-15">
-                                        <i class="iconfont icon-dir"></i>
+                                        <div class="sprite sprite-dr"></div>
                                     </div>
                                     <div class="col-73">
                                         <p class="original-name">尤克里里之谈几点</p>
@@ -337,34 +285,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row row-opera hide">
-                            <div class="col-25 share">
-                                <i class="iconfont open-popup" data-popup=".popup-share">&#xe64c;</i>
-                                <span>分享</span>
-                            </div>
-                            <div class="col-25 delete">
-                                <i class="iconfont">&#xe64b;</i>
-                                <span>删除</span>
-                            </div>
-                            <div class="col-25 rename open-popup" data-popup=".popup-rename">
-                                <i class="iconfont">&#xe64e;</i>
-                                <span>重命名</span>
-                            </div>
-                            <div class="col-25 more">
-                                <i class="iconfont">&#xe66f;</i>
-                                <span>更多</span>
-                            </div>
-                        </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
                             <div class="card-content-inner">
                                 <div class="row no-gutter">
-                                    <div class="col-12">
-                                        <i class="iconfont open-close">&#xe63e;</i>
-                                    </div>
+                                    <label class="col-12"  for="file5">
+                                        <div class="cloudfog-checkbox">
+                                            <input class="check-input" id="file5" type="checkbox">
+                                            <i class="iconfont">&#xe64f;</i>
+                                        </div>
+                                    </label>
                                     <div class="col-15">
-                                        <i class="iconfont icon-dir"></i>
+                                        <div class="sprite sprite-dr"></div>
                                     </div>
                                     <div class="col-73">
                                         <p class="original-name">尤克里里之谈几点</p>
@@ -376,22 +309,52 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row row-opera hide">
-                            <div class="col-25 share">
-                                <i class="iconfont open-popup" data-popup=".popup-share">&#xe64c;</i>
-                                <span>分享</span>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="row no-gutter">
+                                    <label class="col-12"  for="file6">
+                                        <div class="cloudfog-checkbox">
+                                            <input class="check-input" id="file6" type="checkbox">
+                                            <i class="iconfont">&#xe64f;</i>
+                                        </div>
+                                    </label>
+                                    <div class="col-15">
+                                        <div class="sprite sprite-dr"></div>
+                                    </div>
+                                    <div class="col-73">
+                                        <p class="original-name">尤克里里之谈几点</p>
+                                        <p>
+                                            <span class="date-rank">2016-11-06</span>
+                                            <span class="right">344.25k</span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-25 delete">
-                                <i class="iconfont">&#xe64b;</i>
-                                <span>删除</span>
-                            </div>
-                            <div class="col-25 rename open-popup" data-popup=".popup-rename">
-                                <i class="iconfont">&#xe64e;</i>
-                                <span>重命名</span>
-                            </div>
-                            <div class="col-25 more">
-                                <i class="iconfont">&#xe66f;</i>
-                                <span>更多</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="row no-gutter">
+                                    <label class="col-12"  for="file7">
+                                        <div class="cloudfog-checkbox">
+                                            <input class="check-input" id="file7" type="checkbox">
+                                            <i class="iconfont">&#xe64f;</i>
+                                        </div>
+                                    </label>
+                                    <div class="col-15">
+                                        <div class="sprite sprite-dr"></div>
+                                    </div>
+                                    <div class="col-73">
+                                        <p class="original-name">尤克里里之谈几点</p>
+                                        <p>
+                                            <span class="date-rank">2016-11-07</span>
+                                            <span class="right">344.25k</span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -401,25 +364,17 @@
                         <div class="card-content">
                             <div class="card-content-inner">
                                 <div class="row no-gutter">
-                                    <div class="col-12">
-                                        <div class="cloud-download">
-                                            <i class="iconfont ">&#xe66e;</i>
+                                    <label class="col-12"  for="file8">
+                                        <div class="cloudfog-checkbox">
+                                            <input class="check-input" id="file8" type="checkbox">
+                                            <i class="iconfont">&#xe64f;</i>
                                         </div>
-                                        <div class="infinite-scroll-preloader hide">
-                                            <div class="preloader"></div>
-                                        </div>
-                                        <label for="file8" class="check-hide">
-                                            <div class="cloudfog-checkbox">
-                                                <input class="check-input" id="file8" type="checkbox">
-                                                <i class="iconfont">&#xe64f;</i>
-                                            </div>
-                                        </label>
-                                    </div>
+                                    </label>
                                     <div class="col-15">
                                         <div class="sprite sprite-jpg"></div>
                                     </div>
-                                    <div class="col-73 cloud">
-                                        <p class="original-name">尤克里里之谈几点尤克里里之谈几点尤克里里之谈几点</p>
+                                    <div class="col-73">
+                                        <p class="original-name">尤克里里之谈几点</p>
                                         <p>
                                             <span class="date-rank">2016-11-08</span>
                                             <span class="right">344.25k</span>
@@ -433,24 +388,16 @@
                         <div class="card-content">
                             <div class="card-content-inner">
                                 <div class="row no-gutter">
-                                    <div class="col-12">
-                                        <div class="cloud-download">
-                                            <i class="iconfont ">&#xe66e;</i>
+                                    <label class="col-12"  for="file9">
+                                        <div class="cloudfog-checkbox">
+                                            <input class="check-input" id="file9" type="checkbox">
+                                            <i class="iconfont">&#xe64f;</i>
                                         </div>
-                                        <div class="infinite-scroll-preloader hide">
-                                            <div class="preloader"></div>
-                                        </div>
-                                        <label for="file9" class="check-hide">
-                                            <div class="cloudfog-checkbox">
-                                                <input class="check-input" id="file9" type="checkbox">
-                                                <i class="iconfont">&#xe64f;</i>
-                                            </div>
-                                        </label>
-                                    </div>
+                                    </label>
                                     <div class="col-15">
                                         <div class="sprite sprite-jpg"></div>
                                     </div>
-                                    <div class="col-73 cloud">
+                                    <div class="col-73">
                                         <p class="original-name">尤克里里之谈几点</p>
                                         <p>
                                             <span class="date-rank">2016-11-09</span>
@@ -465,20 +412,12 @@
                         <div class="card-content">
                             <div class="card-content-inner">
                                 <div class="row no-gutter">
-                                    <div class="col-12">
-                                        <div class="cloud-download hide">
-                                            <i class="iconfont ">&#xe66e;</i>
+                                    <label class="col-12"  for="file10">
+                                        <div class="cloudfog-checkbox">
+                                            <input class="check-input" id="file10" type="checkbox">
+                                            <i class="iconfont">&#xe64f;</i>
                                         </div>
-                                        <div class="infinite-scroll-preloader hide">
-                                            <div class="preloader"></div>
-                                        </div>
-                                        <label for="file10" class="">
-                                            <div class="cloudfog-checkbox">
-                                                <input class="check-input" id="file10" type="checkbox">
-                                                <i class="iconfont">&#xe64f;</i>
-                                            </div>
-                                        </label>
-                                    </div>
+                                    </label>
                                     <div class="col-15">
                                         <div class="sprite sprite-jpg"></div>
                                     </div>
@@ -497,20 +436,12 @@
                         <div class="card-content">
                             <div class="card-content-inner">
                                 <div class="row no-gutter">
-                                    <div class="col-12">
-                                        <div class="cloud-download hide">
-                                            <i class="iconfont ">&#xe66e;</i>
+                                    <label class="col-12"  for="file11">
+                                        <div class="cloudfog-checkbox">
+                                            <input class="check-input" id="file11" type="checkbox">
+                                            <i class="iconfont">&#xe64f;</i>
                                         </div>
-                                        <div class="infinite-scroll-preloader hide">
-                                            <div class="preloader"></div>
-                                        </div>
-                                        <label for="file11" class="">
-                                            <div class="cloudfog-checkbox">
-                                                <input class="check-input" id="file11" type="checkbox">
-                                                <i class="iconfont">&#xe64f;</i>
-                                            </div>
-                                        </label>
-                                    </div>
+                                    </label>
                                     <div class="col-15">
                                         <div class="sprite sprite-jpg"></div>
                                     </div>
@@ -525,10 +456,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- 加载提示符 -->
-                <div class="infinite-scroll-preloader">
-                    <div class="preloader"></div>
                 </div>
             </div>
         </div>
@@ -546,10 +473,10 @@
                 <span class="icon iconfont">&#xe638;</span>
                 <span class="tab-label">共享</span>
             </a>
-            <!--<a class="tab-item external" href="uplist.html">-->
-            <!--<span class="icon iconfont">&#xe654;</span>-->
-            <!--<span class="tab-label">上传列表</span>-->
-            <!--</a>-->
+            <a class="tab-item external" href="uplist.html">
+                <span class="icon iconfont">&#xe654;</span>
+                <span class="tab-label">上传列表</span>
+            </a>
             <a class="tab-item external" href="mine.html">
                 <span class="icon iconfont">&#xe63b;</span>
                 <span class="tab-label">设置</span>
@@ -566,16 +493,16 @@
                 <span class="tab-label">分享</span>
             </a>
             <a class="tab-item external delete-item open-popup" data-popup=".popup-delete" href="#">
-                <span class="icon iconfont">&#xe64b;</span>
+                <span class="icon iconfont" >&#xe64b;</span>
                 <span class="tab-label">删除</span>
             </a>
             <a class="tab-item external rename-item" href="#">
                 <span class="icon iconfont">&#xe64e;</span>
                 <span class="tab-label">重命名</span>
             </a>
-            <a class="tab-item external remove-item more" href="#">
-                <span class="icon iconfont">&#xe66f;</span>
-                <span class="tab-label">更多</span>
+            <a class="tab-item external remove-item open-popup" data-popup=".popup-remove" href="#">
+                <span class="icon iconfont">&#xe64a;</span>
+                <span class="tab-label">移动</span>
             </a>
             <p class="cancel">
                 <button type="reset" class="left close-checked-tab">取消</button>
@@ -588,10 +515,10 @@
             <div class="content-block">
                 <div class="content-padded grid-demo">
                     <h1>分享</h1>
-                    <div class="row no-gutter share-to-common">
+                    <div class="row no-gutter share-to-common open-popup" data-popup=".popup-to-common">
                         <div class="col-20">
                             <div class="cloudfog-radio">
-                                <input id="inputCommon" class="radio-btn" type="radio" name="share">
+                                <input id="inputCommon" class="radio-btn" type="radio">
                                 <i class="green-dot"></i>
                             </div>
                         </div>
@@ -599,10 +526,10 @@
                             <label for="inputCommon">分享到公共资源</label>
                         </div>
                     </div>
-                    <div class="row no-gutter share-self-item">
+                    <div class="row no-gutter share-self-item open-popup" data-popup=".popup-to-oneself">
                         <div class="col-20">
                             <div class="cloudfog-radio">
-                                <input id="inputSelf" class="radio-btn" type="radio" name="share">
+                                <input id="inputSelf" class="radio-btn" type="radio">
                                 <i class="green-dot"></i>
                             </div>
                         </div>
@@ -621,8 +548,7 @@
                 <div class="content-padded grid-demo">
                     <header class="bar bar-nav">
                         <h1 class="title">分享给个人</h1>
-                        <button class="button button-link button-nav pull-left close-popup"
-                                data-popup=".popup-to-oneself">
+                        <button class="button button-link button-nav pull-left close-popup" data-popup=".popup-to-oneself">
                             <span class="icon icon-left"></span>
                         </button>
                         <div class="search-bar row">
@@ -637,7 +563,7 @@
                         <div class="list-block">
                             <ul>
                                 <li class="item-content">
-                                    <label class="item-media" for="f1">
+                                    <label class="item-media"  for="f1">
                                         <div class="cloudfog-checkbox">
                                             <input class="check-input" id="f1" type="checkbox">
                                             <i class="iconfont">&#xe64f;</i>
@@ -654,7 +580,7 @@
                                 </li>
                                 <ul class="hide">
                                     <li class="item-content">
-                                        <label class="item-media" for="f2">
+                                        <label class="item-media"  for="f2">
                                             <div class="cloudfog-checkbox">
                                                 <input class="check-input" id="f2" type="checkbox">
                                                 <i class="iconfont">&#xe64f;</i>
@@ -671,7 +597,7 @@
                                     </li>
                                     <ul class="hide">
                                         <li class="item-content">
-                                            <label class="item-media" for="f6">
+                                            <label class="item-media"  for="f6">
                                                 <div class="cloudfog-checkbox">
                                                     <input class="check-input" id="f6" type="checkbox">
                                                     <i class="iconfont iconfont-down">&#xe64f;</i>
@@ -684,7 +610,7 @@
                                             </div>
                                         </li>
                                         <li class="item-content">
-                                            <label class="item-media" for="f7">
+                                            <label class="item-media"  for="f7">
                                                 <div class="cloudfog-checkbox">
                                                     <input class="check-input" id="f7" type="checkbox">
                                                     <i class="iconfont">&#xe64f;</i>
@@ -698,7 +624,7 @@
                                         </li>
                                     </ul>
                                     <li class="item-content">
-                                        <label class="item-media" for="f3">
+                                        <label class="item-media"  for="f3">
                                             <div class="cloudfog-checkbox">
                                                 <input class="check-input" id="f3" type="checkbox">
                                                 <i class="iconfont iconfont-down">&#xe64f;</i>
@@ -715,7 +641,7 @@
                                     </li>
                                     <ul class="hide">
                                         <li class="item-content">
-                                            <label class="item-media" for="f6">
+                                            <label class="item-media"  for="f6">
                                                 <div class="cloudfog-checkbox">
                                                     <input class="check-input" id="f6" type="checkbox">
                                                     <i class="iconfont">&#xe64f;</i>
@@ -728,7 +654,7 @@
                                             </div>
                                         </li>
                                         <li class="item-content">
-                                            <label class="item-media" for="f7">
+                                            <label class="item-media"  for="f7">
                                                 <div class="cloudfog-checkbox">
                                                     <input class="check-input" id="f7" type="checkbox">
                                                     <i class="iconfont">&#xe64f;</i>
@@ -742,7 +668,7 @@
                                         </li>
                                     </ul>
                                     <li class="item-content">
-                                        <label class="item-media" for="f4">
+                                        <label class="item-media"  for="f4">
                                             <div class="cloudfog-checkbox">
                                                 <input class="check-input" id="f4" type="checkbox">
                                                 <i class="iconfont">&#xe64f;</i>
@@ -759,7 +685,7 @@
                                     </li>
                                     <ul class="hide">
                                         <li class="item-content">
-                                            <label class="item-media" for="f6">
+                                            <label class="item-media"  for="f6">
                                                 <div class="cloudfog-checkbox">
                                                     <input class="check-input" id="f6" type="checkbox">
                                                     <i class="iconfont">&#xe64f;</i>
@@ -772,7 +698,7 @@
                                             </div>
                                         </li>
                                         <li class="item-content">
-                                            <label class="item-media" for="f7">
+                                            <label class="item-media"  for="f7">
                                                 <div class="cloudfog-checkbox">
                                                     <input class="check-input" id="f7" type="checkbox">
                                                     <i class="iconfont">&#xe64f;</i>
@@ -786,7 +712,7 @@
                                         </li>
                                     </ul>
                                     <li class="item-content">
-                                        <label class="item-media" for="f5">
+                                        <label class="item-media"  for="f5">
                                             <div class="cloudfog-checkbox">
                                                 <input class="check-input" id="f5" type="checkbox">
                                                 <i class="iconfont">&#xe64f;</i>
@@ -803,7 +729,7 @@
                                     </li>
                                     <ul class="hide">
                                         <li class="item-content">
-                                            <label class="item-media" for="f6">
+                                            <label class="item-media"  for="f6">
                                                 <div class="cloudfog-checkbox">
                                                     <input class="check-input" id="f6" type="checkbox">
                                                     <i class="iconfont">&#xe64f;</i>
@@ -816,7 +742,7 @@
                                             </div>
                                         </li>
                                         <li class="item-content">
-                                            <label class="item-media" for="f7">
+                                            <label class="item-media"  for="f7">
                                                 <div class="cloudfog-checkbox">
                                                     <input class="check-input" id="f7" type="checkbox">
                                                     <i class="iconfont">&#xe64f;</i>
@@ -835,9 +761,7 @@
                     </div>
                     <nav class="bar bar-tab checked-tab hide">
                         <p class="cancel">
-                            <button type="reset" class="left close-checked-tab close-popup"
-                                    data-popup=".popup-to-oneself">取消
-                            </button>
+                            <button type="reset" class="left close-checked-tab close-popup" data-popup=".popup-to-oneself">取消</button>
                             <button class="right">分享</button>
                         </p>
                     </nav>
@@ -850,8 +774,7 @@
                 <div class="content-padded grid-demo">
                     <header class="bar bar-nav">
                         <h1 class="title">分享到公共资源</h1>
-                        <button class="button button-link button-nav pull-left close-popup"
-                                data-popup=".popup-to-common">
+                        <button class="button button-link button-nav pull-left close-popup" data-popup=".popup-to-common">
                             <span class="icon icon-left"></span>
                         </button>
                     </header>
@@ -950,454 +873,88 @@
                         <button class="button button-link button-nav pull-left close-popup" data-popup=".popup-remove">
                             <span class="icon icon-left"></span>
                         </button>
-                        <h1 class="title">移动到</h1>
-                    </header>
-                    <div class="content">
-                        <div class="buttons-tab">
-                            选择目标文件夹
+                        <h1 class="title">转移文件</h1>
+                        <div class="search-bar row">
+                            <p class="note">将删除用户的文件转移给...</p>
+                            <div class="search-bar-input col-100">
+                                <label class="icon icon-search" for="searchMove"></label>
+                                <input type="search" id='searchMove'/>
+                                <i class="iconfont cancel">&#xe651;</i>
+                            </div>
                         </div>
-                        <div class="content-block">
-                            <ul class="allDr">
-                                <li>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <i class="iconfont">&#xe653;</i>
-                                            <i class="iconfont hide">&#xe652;</i></div>
-                                        <div class="col-12">
-                                            <div class="sprite sprite-dr"></div>
+                    </header>
+                    <div class="content self-content">
+                        <div class="list-block">
+                            <ul>
+                                <li class="item-content">
+                                    <label class="item-media"  for="f1">
+                                        <div class="cloudfog-radio">
+                                            <input class="radio-btn" type="radio">
+                                            <i class="green-dot"></i>
                                         </div>
-                                        <div class="col-76"><span class="dr-name">全部文件</span></div>
+                                    </label>
+                                    <div class="item-inner">
+                                        <div class="item-title">
+                                            xiaoA
+                                        </div>
                                     </div>
-                                    <ul class="hide">
-                                        <li>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <i class="iconfont">&#xe653;</i>
-                                                    <i class="iconfont hide">&#xe652;</i></div>
-                                                <div class="col-12">
-                                                    <div class="sprite sprite-dr"></div>
-                                                </div>
-                                                <div class="col-76"><span class="dr-name">全部文件</span></div>
-                                            </div>
-                                            <ul class="hide">
-                                                <li>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <i class="iconfont no-child">&#xe653;</i>
-                                                            <i class="iconfont hide no-child">&#xe652;</i></div>
-                                                        <div class="col-12">
-                                                            <div class="sprite sprite-dr"></div>
-                                                        </div>
-                                                        <div class="col-76"><span class="dr-name">全部文件1</span></div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <i class="iconfont no-child">&#xe653;</i>
-                                                            <i class="iconfont hide no-child">&#xe652;</i></div>
-                                                        <div class="col-12">
-                                                            <div class="sprite sprite-dr"></div>
-                                                        </div>
-                                                        <div class="col-76"><span class="dr-name">全部文件2</span></div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <i class="iconfont">&#xe653;</i>
-                                                    <i class="iconfont hide">&#xe652;</i></div>
-                                                <div class="col-12">
-                                                    <div class="sprite sprite-dr"></div>
-                                                </div>
-                                                <div class="col-76"><span class="dr-name">全部文件3</span></div>
-                                            </div>
-                                            <ul class="hide">
-                                                <li>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <i class="iconfont no-child">&#xe653;</i>
-                                                            <i class="iconfont hide no-child">&#xe652;</i></div>
-                                                        <div class="col-12">
-                                                            <div class="sprite sprite-dr"></div>
-                                                        </div>
-                                                        <div class="col-76"><span class="dr-name">全部文件</span></div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <i class="iconfont no-child">&#xe653;</i>
-                                                            <i class="iconfont hide no-child">&#xe652;</i></div>
-                                                        <div class="col-12">
-                                                            <div class="sprite sprite-dr"></div>
-                                                        </div>
-                                                        <div class="col-76"><span class="dr-name">全部文件</span></div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <i class="iconfont">&#xe653;</i>
-                                                    <i class="iconfont hide">&#xe652;</i></div>
-                                                <div class="col-12">
-                                                    <div class="sprite sprite-dr"></div>
-                                                </div>
-                                                <div class="col-76"><span class="dr-name">全部文件4</span></div>
-                                            </div>
-
-                                            <ul class="hide">
-                                                <li>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <i class="iconfont no-child">&#xe653;</i>
-                                                            <i class="iconfont hide no-child">&#xe652;</i></div>
-                                                        <div class="col-12">
-                                                            <div class="sprite sprite-dr"></div>
-                                                        </div>
-                                                        <div class="col-76"><span class="dr-name">全部文件5</span></div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <i class="iconfont no-child">&#xe653;</i>
-                                                            <i class="iconfont hide no-child">&#xe652;</i></div>
-                                                        <div class="col-12">
-                                                            <div class="sprite sprite-dr"></div>
-                                                        </div>
-                                                        <div class="col-76"><span class="dr-name">全部文件6</span></div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
                                 </li>
-                                <li>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <i class="iconfont">&#xe653;</i>
-                                            <i class="iconfont hide">&#xe652;</i></div>
-                                        <div class="col-12">
-                                            <div class="sprite sprite-dr"></div>
+                                <li class="item-content">
+                                    <label class="item-media"  for="f1">
+                                        <div class="cloudfog-radio">
+                                            <input class="radio-btn" type="radio">
+                                            <i class="green-dot"></i>
                                         </div>
-                                        <div class="col-76"><span class="dr-name">全部文件7</span></div>
+                                    </label>
+                                    <div class="item-inner">
+                                        <div class="item-title">
+                                            xiaoA
+                                        </div>
                                     </div>
-                                    <ul class="hide">
-                                        <li>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <i class="iconfont">&#xe653;</i>
-                                                    <i class="iconfont hide">&#xe652;</i></div>
-                                                <div class="col-12">
-                                                    <div class="sprite sprite-dr"></div>
-                                                </div>
-                                                <div class="col-76"><span class="dr-name">全部文件8</span></div>
-                                            </div>
-                                            <ul class="hide">
-                                                <li>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <i class="iconfont no-child">&#xe653;</i>
-                                                            <i class="iconfont hide no-child">&#xe652;</i></div>
-                                                        <div class="col-12">
-                                                            <div class="sprite sprite-dr"></div>
-                                                        </div>
-                                                        <div class="col-76"><span class="dr-name">全部文件9</span></div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <i class="iconfont no-child">&#xe653;</i>
-                                                            <i class="iconfont hide no-child">&#xe652;</i></div>
-                                                        <div class="col-12">
-                                                            <div class="sprite sprite-dr"></div>
-                                                        </div>
-                                                        <div class="col-76"><span class="dr-name">全部文件10</span></div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
                                 </li>
-                                <li>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <i class="iconfont">&#xe653;</i>
-                                            <i class="iconfont hide">&#xe652;</i></div>
-                                        <div class="col-12">
-                                            <div class="sprite sprite-dr"></div>
+                                <li class="item-content">
+                                    <label class="item-media"  for="f1">
+                                        <div class="cloudfog-radio">
+                                            <input class="radio-btn" type="radio">
+                                            <i class="green-dot"></i>
                                         </div>
-                                        <div class="col-76"><span class="dr-name">全部文件11</span></div>
+                                    </label>
+                                    <div class="item-inner">
+                                        <div class="item-title">
+                                            xiaoA
+                                        </div>
                                     </div>
-                                    <ul class="hide">
-                                        <li>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <i class="iconfont">&#xe653;</i>
-                                                    <i class="iconfont hide">&#xe652;</i></div>
-                                                <div class="col-12">
-                                                    <div class="sprite sprite-dr"></div>
-                                                </div>
-                                                <div class="col-76"><span class="dr-name">全部文件12</span></div>
-                                            </div>
-                                            <ul class="hide">
-                                                <li>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <i class="iconfont no-child">&#xe653;</i>
-                                                            <i class="iconfont hide no-child">&#xe652;</i></div>
-                                                        <div class="col-12">
-                                                            <div class="sprite sprite-dr"></div>
-                                                        </div>
-                                                        <div class="col-76"><span class="dr-name">全部文件13</span></div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <i class="iconfont no-child">&#xe653;</i>
-                                                            <i class="iconfont hide no-child">&#xe652;</i></div>
-                                                        <div class="col-12">
-                                                            <div class="sprite sprite-dr"></div>
-                                                        </div>
-                                                        <div class="col-76"><span class="dr-name">全部文件14</span></div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
                                 </li>
-                                <li>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <i class="iconfont">&#xe653;</i>
-                                            <i class="iconfont hide">&#xe652;</i></div>
-                                        <div class="col-12">
-                                            <div class="sprite sprite-dr"></div>
+                                <li class="item-content">
+                                    <label class="item-media"  for="f1">
+                                        <div class="cloudfog-radio">
+                                            <input class="radio-btn" type="radio">
+                                            <i class="green-dot"></i>
                                         </div>
-                                        <div class="col-76"><span class="dr-name">全部文件15</span></div>
+                                    </label>
+                                    <div class="item-inner">
+                                        <div class="item-title">
+                                            xiaoA
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <nav class="bar bar-tab">
-                        <a href="#" class="button button-warning left open-popup" data-popup=".popup-create-new-file">新建文件夹</a>
-                        <a href="#" class="button button-light right">移动</a>
+                        <p><a href="#" class="button button-warning">保存</a></p>
                     </nav>
-                </div>
-            </div>
-        </div>
-        <!--详细信息-->
-        <div class="popup popup-detail">
-            <div class="content-block">
-                <div class="content-padded grid-demo">
-                    <header class="bar bar-nav">
-                        <button class="button button-link button-nav pull-left close-popup" data-popup=".popup-detail">
-                            <span class="icon icon-left"></span>
-                        </button>
-                        <h1 class="title">详细信息</h1>
-                    </header>
-                    <div class="content">
-                        <div class="row">
-                            <div class="col-30">文件名:</div>
-                            <div class="col-70">尤克里里之谈几点</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-30">大小:</div>
-                            <div class="col-70">344.25KB</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-30">类型:</div>
-                            <div class="col-70">acc</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-30">修改时间:</div>
-                            <div class="col-70"><span>2017-04-10</span><span>16:43</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--上传列表-->
-        <div class="popup popup-up-list">
-            <div class="content-block">
-                <div class="content">
-                    <div class="buttons-tab">
-                        <h1>
-                            上传列表
-                            <span>
-                                5个文件，共1.7MB
-                            </span>
-                            <a href="" class="button right button-light">取消</a>
-                        </h1>
-                    </div>
-                    <div class="content-block">
-                        <div class="tabs">
-                            <div id="UplodQueue" class="tab active">
-                                <div class="content-block">
-                                    <div class="list-block">
-                                        <div class="card">
-                                            <div class="card-content">
-                                                <div class="card-content-inner">
-                                                    <div class="row no-gutter">
-                                                        <div class="col-23">
-                                                            <div class="sprite sprite-dr"></div>
-                                                        </div>
-                                                        <div class="col-77">
-                                                            <p>尤克里里之谈几点</p>
-                                                            <div class="p-progress">
-                                                                <progress max="100" value="100"></progress>
-                                                                <span class="note-progress">30%</span>
-                                                                <div class="status">
-                                                                    <i class="iconfont success">&#xe66c;</i>
-                                                                    <span class="status-note">文件太大</span>
-                                                                </div>
-                                                            </div>
-                                                            <p class="data-info">
-                                                                <span>
-                                                                    <em class="size right">344.25k</em>
-                                                                </span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-content">
-                                                <div class="card-content-inner">
-                                                    <div class="row no-gutter">
-                                                        <div class="col-23">
-                                                            <div class="sprite sprite-dr"></div>
-                                                        </div>
-                                                        <div class="col-77">
-                                                            <p>尤克里里之谈几点</p>
-                                                            <div class="p-progress">
-                                                                <progress max="100" value="100"></progress>
-                                                                <span class="note-progress">30%</span>
-                                                                <div class="status">
-                                                                    <i class="iconfont del">&#xe64b;</i>
-                                                                    <span class="status-note">删除</span>
-                                                                </div>
-                                                            </div>
-                                                            <p class="data-info">
-                                                        <span>
-                                                            <em class="size right">344.25k</em>
-                                                        </span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-content">
-                                                <div class="card-content-inner">
-                                                    <div class="row no-gutter">
-                                                        <div class="col-23">
-                                                            <div class="sprite sprite-dr"></div>
-                                                        </div>
-                                                        <div class="col-77">
-                                                            <p>尤克里里之谈几点</p>
-                                                            <div class="p-progress">
-                                                                <progress max="100" value="100"></progress>
-                                                                <span class="note-progress">30%</span>
-                                                                <div class="status">
-                                                                    <i class="iconfont fail">&#xe66d;</i>
-                                                                    <span class="status-note">失败</span>
-                                                                </div>
-                                                            </div>
-                                                            <p class="data-info">
-                                                        <span>
-                                                            <em class="size right">344.25k</em>
-                                                        </span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-content">
-                                                <div class="card-content-inner">
-                                                    <div class="row no-gutter">
-                                                        <div class="col-23">
-                                                            <div class="sprite sprite-dr"></div>
-                                                        </div>
-                                                        <div class="col-77">
-                                                            <p>尤克里里之谈几点</p>
-                                                            <div class="p-progress">
-                                                                <progress max="100" value="100"></progress>
-                                                                <span class="note-progress">30%</span>
-                                                                <div class="status">
-                                                                    <i class="iconfont success">&#xe66c;</i>
-                                                                    <span class="status-note">成功</span>
-                                                                </div>
-
-                                                            </div>
-                                                            <p class="data-info">
-                                                        <span>
-                                                            <em class="size right">344.25k</em>
-                                                        </span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-content">
-                                                <div class="card-content-inner">
-                                                    <div class="row no-gutter">
-                                                        <div class="col-23">
-                                                            <div class="sprite sprite-dr"></div>
-                                                        </div>
-                                                        <div class="col-77">
-                                                            <p>尤克里里之谈几点</p>
-                                                            <div class="p-progress">
-                                                                <progress max="100" value="100"></progress>
-                                                                <span class="note-progress">30%</span>
-                                                                <div class="status">
-                                                                    <i class="iconfont success">&#xe66c;</i>
-                                                                    <span class="status-note">成功</span>
-                                                                </div>
-
-                                                            </div>
-                                                            <p class="data-info">
-                                                        <span>
-                                                            <em class="size right">344.25k</em>
-                                                        </span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 </body>
 <!--[if lt IE 9]>
 <script src="lib/html5shiv.min.js"></script>
 <script src="lib/respond.min.js"></script>
 <![endif]-->
 <script src="js/common.js"></script>
-<script src="lib/jquery-1.12.1.min.js"></script>
-<script src="lib/webuploader/webuploader.min.js" type="text/javascript"></script>
 <script src="js/index.js"></script>
-
 </html>
